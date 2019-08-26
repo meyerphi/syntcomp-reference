@@ -1,4 +1,4 @@
-aag 40 7 1 7 32
+aag 38 7 1 7 30
 2
 4
 6
@@ -6,57 +6,55 @@ aag 40 7 1 7 32
 10
 12
 14
-16 75
-44
-54
-56
-80
-76
+16 77
+47
+52
+62
+58
+41
 72
-71
-18 6 4
-20 19 13
-22 11 5
-24 22 21
-26 12 9
-28 26 19
-30 29 21
-32 25 15
-34 32 31
-36 9 7
-38 14 11
+74
+18 12 10
+20 19 5
+22 6 2
+24 23 20
+26 11 3
+28 27 5
+30 29 8
+32 13 5
+34 33 3
+36 35 6
+38 31 19
 40 38 37
-42 40 20
-44 43 35
-46 10 5
-48 8 7
-50 49 47
-52 15 13
-54 52 51
-56 55 45
-58 31 11
-60 59 35
-62 61 3
-64 15 2
-66 64 17
-68 66 20
-70 69 63
-72 64 28
-74 61 2
-76 74 14
-78 73 70
-80 78 77
-i0 p0p0zero0users
-i1 p0p0moving2up0steps
-i2 p0p0moving2down0steps
+42 41 25
+44 25 14
+46 45 43
+48 14 2
+50 48 20
+52 50 7
+54 14 3
+56 54 16
+58 56 20
+60 59 51
+62 60 46
+64 11 2
+66 13 4
+68 67 65
+70 9 7
+72 70 69
+74 73 40
+76 43 14
+i0 p0p0enter2event0bottom
+i1 p0p0enter2event0top
+i2 p0p0exit2event0bottom
 i3 p0p0exit2event0top
-i4 p0p0exit2event0bottom
-i5 p0p0enter2event0top
-i6 p0p0enter2event0bottom
-o0 u0users0f1dinc0users1b
-o1 u0users0f1ddec0users1b
-o2 u0users0users
+i4 p0p0moving2down0steps
+i5 p0p0moving2up0steps
+i6 p0p0zero0users
+o0 u0steps0f1dmove2down1b
+o1 u0steps0f1dmove2up1b
+o2 u0steps0steps
 o3 u0steps0f1dstop1b
-o4 u0steps0f1dmove2up1b
-o5 u0steps0f1dmove2down1b
-o6 u0steps0steps
+o4 u0users0f1ddec0users1b
+o5 u0users0f1dinc0users1b
+o6 u0users0users

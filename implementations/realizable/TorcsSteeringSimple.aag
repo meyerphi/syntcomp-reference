@@ -1,21 +1,20 @@
-aag 10 4 1 3 5
+aag 9 4 0 3 5
 2
 4
 6
 8
-10 8
-20
 14
-18
-12 7 5
-14 9 13
-16 3 12
-18 9 16
-20 15 19
-i0 p0p0turning2right0angle
-i1 p0p0turning2left0angle
-i2 p0p0right2of2center0track2pos
-i3 p0p0left2of2center0track2pos
-o0 u0steer0f1dsteer2right1b
+12
+10
+10 15 13
+12 3 17
+14 9 16
+16 3 18
+18 7 5
+i0 p0p0left2of2center0track2pos
+i1 p0p0right2of2center0track2pos
+i2 p0p0turning2left0angle
+i3 p0p0turning2right0angle
+o0 u0steer0steer
 o1 u0steer0f1dsteer2left1b
-o2 u0steer0steer
+o2 u0steer0f1dsteer2right1b

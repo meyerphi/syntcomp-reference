@@ -1,54 +1,48 @@
-aag 31 4 2 9 25
+aag 25 4 2 9 19
 2
 4
 6
 8
-10 63
-12 6
-16
-16
+10 46
+12 51
+0
+26
+0
 39
-42
-49
-55
-56
-35
-59
-14 11 3
-16 14 13
-18 12 10
-20 4 3
-22 6 4
-24 23 8
-26 25 21
-28 27 18
-30 12 11
-32 30 8
-34 33 29
-36 15 13
-38 37 34
-40 16 6
-42 40 24
-44 11 5
-46 45 3
-48 47 23
-50 30 9
-52 26 18
-54 53 51
-56 48 43
-58 54 37
-60 7 4
-62 61 47
+38
+40
+27
+36
+31
+14 11 5
+16 15 3
+18 17 5
+20 13 10
+22 6 2
+24 22 21
+26 25 19
+28 12 11
+30 29 21
+32 11 2
+34 33 8
+36 35 30
+38 37 21
+40 34 30
+42 17 7
+44 42 21
+46 45 19
+48 19 6
+50 49 43
 i0 p0p0right2most0pos
 i1 p0p0left2most0pos
 i2 p0p0clicked0button
 i3 p0p0center0pos
-o0 u0score0score
-o1 u0vel0vel
-o2 u0score0f1dadd0score0f1done1b1b
-o3 u0pos0pos
-o4 u0pos0f1dadd0pos0vel1b
-o5 u0score0f1dzero1b
+o0 u0pos0pos
+o1 u0pos0f1dadd0pos0vel1b
+o2 u0score0score
+o3 u0score0f1dzero1b
+o4 u0score0f1dadd0score0f1done1b1b
+o5 u0vel0f1dadd0vel0f1done1b1b
 o6 u0pos0f1dsub0pos0vel1b
-o7 u0vel0f1dadd0vel0f1done1b1b
-o8 u0vel0f1done1b
+o7 u0vel0f1done1b
+o8 u0vel0vel
