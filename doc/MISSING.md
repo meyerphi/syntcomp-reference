@@ -5,10 +5,8 @@ For some specifications, there is yet no reference implemenation.
 ### Realizable specifications:
 
 - `amba_case_study_3`
-- `full_arbiter_8`
 - `full_arbiter_10`
 - `full_arbiter_12`
-- `full_arbiter_enc_8`
 - `full_arbiter_enc_10`
 - `full_arbiter_enc_12`
 - `genbuf3`
@@ -72,7 +70,9 @@ timeout of one hour when verifying the implementation:
 
 - `detector_12`
 - `full_arbiter_7`
+- `full_arbiter_8`
 - `full_arbiter_enc_6`
+- `full_arbiter_enc_8`
 - `ltl2dba_C2_12`
 - `ltl2dba_Q_12`
 - `narylatch_12`
