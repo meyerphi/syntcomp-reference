@@ -11,7 +11,7 @@ verification of all smaller implementations.
 ## Large implementations
 
 Some specifications only have a large implementation so far that can quite
-possibly improved. Here is a list based on a threshold of size 100:
+possibly be improved. Here is a list based on a threshold of size 100:
 
 - `amba_case_study_2`: 2783
 - `amba_decomposed_arbiter_10`: 5107
@@ -37,7 +37,7 @@ unknown and only *O(log2(n))* is given. Here, *log2(n)* is the logarithm of *n*
 to the basis 2, rounded up.
 
 Specification | Latches | And gates
---- | ---: | ---: | ---
+--- | ---: | ---:
 `amba_decomposed_arbiter_`*n* | *n+1* | *6n+6*
 `amba_decomposed_encode_`*n* | *log2(n)* | *n+3log2(n)*
 `amba_decomposed_lock_`*n* | *2* | *2n+2*
