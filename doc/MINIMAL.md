@@ -14,7 +14,6 @@ Some specifications only have a large implementation so far that can quite
 possibly be improved. Here is a list based on a threshold of size 100:
 
 - `amba_case_study_2`: 2783
-- `amba_decomposed_arbiter_10`: 5107
 - `KitchenTimerV5.aag`: 456
 - `KitchenTimerV6.aag`: 553
 - `KitchenTimerV7.aag`: 586

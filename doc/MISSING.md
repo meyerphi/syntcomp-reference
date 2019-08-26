@@ -4,7 +4,6 @@ For some specifications, there is yet no reference implemenation.
 
 ### Realizable specifications:
 
-- `amba_decomposed_arbiter_12`
 - `amba_case_study_3`
 - `full_arbiter_8`
 - `full_arbiter_10`
