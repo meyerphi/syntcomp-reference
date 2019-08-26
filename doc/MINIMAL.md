@@ -3,7 +3,7 @@
 The goal of this repository is to find implementations of minimal size for all
 SYNTCOMP specifications. Unfortunately, finding the minimal implementation is a
 hard problem and verifying if an implementation is indeed the smallest one is
-also hard (unless the size is already 0). However, one can still find smallest
+also hard (unless the size is already 0). However, one can still find small
 implementations by best effort. Further, for some implementations it might be
 possibly to very that they are the smallest ones, e.g. by enumeration and
 verification of all smaller implementations.
@@ -64,7 +64,8 @@ Specification | Latches | And gates
 `simple_arbiter_`*n* | *n* | *0*
 `simple_arbiter_enc_`*n* | *n+1* | *2n+O(log2(n))*
 
-The following specifications are parameterized, but don't have a general solution yet:
+The following specifications are parameterized, but don't have a general
+implementation yet:
 
 - `amba_case_study_`*n*
 - `generalized_buffer_`*n*

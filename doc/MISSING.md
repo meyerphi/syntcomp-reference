@@ -65,7 +65,7 @@ For some specifications, there is yet no reference implemenation.
 - `TwoCountersRefined`
 - `TwoCounters`
 
-# Unverified solutions
+# Unverified implementations
 
 For the following reference implementations, the model checker reaches the
 timeout of one hour when verifying the implementation:

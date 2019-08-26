@@ -32,7 +32,7 @@ and 16 GB of memory and with a timeout of one hour are given in
 ## Adding new reference implementations
 
 New reference implementations that improve upon the existing ones are always
-come. First, several specifications do not yet have any verified reference
+welcome. First, several specifications do not yet have any verified reference
 implementation, for that see the
 [list of missing implementations](doc/MISSING.md).
 Further, some implementations are not yet
@@ -40,8 +40,8 @@ minimal or it is unknown whether their size is minimal, for further info
 see the [notes on minimal sizes](doc/MINIMAL.md).
 
 Finally, some verifications are already very small, but cannot be verified
-within a reasonable amount of time. Here, either a more efficient model
-checker or more work on how to help the model checker verify the solution is
+within a reasonable amount of time. Here, either a more efficient model checker
+or more work on how to help the model checker to verify the implementation is
 needed.
 
 ## Remarks
@@ -50,4 +50,4 @@ The specification `simple_arbiter_2.tlsf` in previous SYNTCOMP iterations had a
 typo and used `n=3` in its parameter specification, making it equivalent to
 `simple_arbiter_3.tlsf`. This is fixed in this selection of benchmarks, where
 we use n=2. However this needs to be taken into account when comparing the
-solution to previous solutions from SYNTCOMP.
+reference implementation to previous implementations from SYNTCOMP.
