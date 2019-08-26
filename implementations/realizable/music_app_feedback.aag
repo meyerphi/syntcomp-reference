@@ -1,0 +1,18 @@
+aag 6 5 0 3 1
+2
+4
+6
+8
+10
+0
+13
+12
+12 7 3
+i0 PTERMleaveAppdsysb
+i1 PTERMmusicPlayingdmpInb
+i2 PTERMpauseButtondsysb
+i3 PTERMplayButtondsysb
+i4 PTERMresumeAppdsysb
+o0 UTERMmpOutmpOut
+o1 UTERMmpOutpausedmpInb
+o2 UTERMmpOutplaydtrtrackPosdmpInbb

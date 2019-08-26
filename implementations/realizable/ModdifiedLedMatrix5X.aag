@@ -1,0 +1,83 @@
+aag 29 3 3 25 23
+2
+4
+6
+8 14
+10 43
+12 26
+18
+20
+0
+24
+26
+28
+0
+30
+38
+45
+17
+0
+46
+48
+30
+51
+28
+13
+40
+52
+36
+55
+58
+56
+0
+14 11 9
+16 15 12
+18 17 4
+20 17 5
+22 11 8
+24 23 13
+26 22 13
+28 14 12
+30 14 13
+32 10 8
+34 15 13
+36 34 33
+38 36 10
+40 32 13
+42 41 29
+44 42 27
+46 30 2
+48 47 17
+50 42 37
+52 33 17
+54 41 15
+56 38 2
+58 57 17
+i0 p0eq0coordx0f1ddec0f1dsizex1b1b
+i1 p0on0write
+i2 p0eqz0waitcounter
+o0 u0ramwrite0f1dwriteram0writecolor0xcoordinate0ycoordinate1b
+o1 u0ramwrite0f1dwriteramnone1b
+o2 u0ramwrite0ramwrite
+o3 u0rampos0f1drampos2r0xcoordinate0ycoordinate1b
+o4 u0rampos0f1drampos250coordx0f1dinc2y0coordy1b1b
+o5 u0rampos0f1drampos240coordx0f1dinc2y0coordy1b1b
+o6 u0rampos0rampos
+o7 u0extclock0f1dlow1b
+o8 u0extclock0f1dhigh1b
+o9 u0extclock0extclock
+o10 u0driver2pin0f1dlow1b
+o11 u0driver2pin0driver2pin
+o12 u0coordy0f1dinc2y0coordy1b
+o13 u0coordy0coordy
+o14 u0coordx0f1dinc2x0coordx1b
+o15 u0coordx0coordx
+o16 u0color250ramout
+o17 u0color250color25
+o18 u0color240ramout
+o19 u0color240color24
+o20 u0color0ramout
+o21 u0color0color
+o22 u0buffer2pin0f1dlow1b
+o23 u0buffer2pin0f1dhigh1b
+o24 u0buffer2pin0buffer2pin

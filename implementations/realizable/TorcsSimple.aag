@@ -1,0 +1,26 @@
+aag 6 3 1 8 2
+2
+4
+6
+8 8
+1
+0
+12
+4
+10
+2
+3
+8
+10 5 7
+12 5 6
+i0 p0p0lt0speed0f1dsub0target2speed0f1dmultp0f1dabs0steer1b0f1dcon248881b1b1b
+i1 p0p0lt0rpm0f1dcon32323231b
+i2 p0p0gt0rpm0f1dcon5523231b
+o0 u0steer0f1dsteering0angle0trackpos1b
+o1 u0steer0steer
+o2 u0gear0f1dmin0f1dcon61b0f1dadd0gear0f1dcon241b1b1b
+o3 u0gear0f1dmax0f1dcon241b0f1dsub0gear0f1dcon241b1b1b
+o4 u0gear0gear
+o5 u0accel0f1dcon23p81b
+o6 u0accel0f1dcon231b
+o7 u0accel0accel

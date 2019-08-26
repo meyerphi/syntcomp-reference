@@ -1,0 +1,49 @@
+aag 32 4 3 6 25
+2
+4
+6
+8
+10 58
+12 63
+14 65
+41
+42
+44
+52
+54
+0
+16 13 11
+18 16 14
+20 18 9
+22 10 6
+24 22 12
+26 25 15
+28 12 3
+30 29 11
+32 10 4
+34 32 13
+36 35 31
+38 36 26
+40 39 21
+42 18 8
+44 16 15
+46 33 13
+48 31 12
+50 47 15
+52 50 49
+54 24 15
+56 28 11
+58 57 26
+60 47 26
+62 61 43
+64 55 21
+i0 p0p0on0mag2finished
+i1 p0p0on0init2finished
+i2 p0p0on0gyr2finished
+i3 p0p0on0acc2finished
+o0 u0part2control0f1dno2cmd1b
+o1 u0part2control0f1dmag2on1b
+o2 u0part2control0f1dinit2on1b
+o3 u0part2control0f1dgyr2on1b
+o4 u0part2control0f1dacc2on1b
+o5 u0part2control0part2control

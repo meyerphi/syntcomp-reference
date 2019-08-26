@@ -1,0 +1,21 @@
+aag 8 4 1 4 3
+2
+4
+6
+8
+10 2
+13
+16
+0
+14
+12 3 5
+14 12 7
+16 15 12
+i0 p0p0on0gameover
+i1 p0p0isscoremode0gamemode
+i2 p0p0isradarmode0gamemode
+i3 p0p0iscockpitmode0gamemode
+o0 u0outpoint0scoreboardpoint
+o1 u0outpoint0radarboardpoint
+o2 u0outpoint0outpoint
+o3 u0outpoint0cockpitboardpoint

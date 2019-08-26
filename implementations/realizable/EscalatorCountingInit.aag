@@ -1,0 +1,37 @@
+aag 19 3 2 7 14
+2
+4
+6
+8 39
+10 13
+16
+20
+12
+26
+36
+28
+34
+12 11 9
+14 13 6
+16 14 5
+18 13 7
+20 18 4
+22 15 4
+24 19 5
+26 25 23
+28 14 2
+30 8 7
+32 31 2
+34 33 10
+36 35 29
+38 13 3
+i0 p0p0zero0users
+i1 p0p0exit2event0top
+i2 p0p0enter2event0bottom
+o0 u0users0f1dinc0users1b
+o1 u0users0f1ddec0users1b
+o2 u0users0f1dreset2to2zero1b
+o3 u0users0users
+o4 u0steps0f1dstop1b
+o5 u0steps0f1dmove1b
+o6 u0steps0steps

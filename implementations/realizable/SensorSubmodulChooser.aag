@@ -1,0 +1,60 @@
+aag 25 4 2 15 19
+2
+4
+6
+8
+10 50
+12 35
+36
+42
+47
+48
+0
+36
+42
+47
+48
+0
+36
+42
+47
+48
+0
+14 7 3
+16 14 9
+18 10 5
+20 19 16
+22 5 3
+24 9 6
+26 24 22
+28 13 9
+30 14 5
+32 30 29
+34 33 27
+36 34 21
+38 11 5
+40 38 12
+42 41 20
+44 40 16
+46 45 27
+48 32 21
+50 27 21
+i0 p0p0on0start2mag
+i1 p0p0on0start2init
+i2 p0p0on0start2gyr
+i3 p0p0on0start2acc
+o0 u0spi2control0spi2control2mag
+o1 u0spi2control0spi2control2init
+o2 u0spi2control0spi2control2gyr
+o3 u0spi2control0spi2control2acc
+o4 u0spi2control0spi2control
+o5 u0sensor2type0sensor2type2mag
+o6 u0sensor2type0sensor2type2init
+o7 u0sensor2type0sensor2type2gyr
+o8 u0sensor2type0sensor2type2acc
+o9 u0sensor2type0sensor2type
+o10 u0reg2manager2cmd0reg2manager2cmd2mag
+o11 u0reg2manager2cmd0reg2manager2cmd2init
+o12 u0reg2manager2cmd0reg2manager2cmd2gyr
+o13 u0reg2manager2cmd0reg2manager2cmd2acc
+o14 u0reg2manager2cmd0reg2manager2cmd

@@ -1,0 +1,29 @@
+aag 7 3 0 9 4
+2
+4
+6
+0
+2
+3
+8
+10
+7
+4
+14
+12
+8 6 11
+10 3 6
+12 8 5
+14 5 9
+i0 PTERMactivateddtoggleb
+i1 PTERMclickeddcounterButtonb
+i2 PTERMclickeddtoggleButtonb
+o0 UTERMcounterButtoncounterButton
+o1 UTERMcounterButtonsetLabeldcounterButtonminusOnedbb
+o2 UTERMcounterButtonsetLabeldcounterButtonvalueb
+o3 UTERMtoggleoffdb
+o4 UTERMtoggleondb
+o5 UTERMtoggletoggle
+o6 UTERMvalueincdvalueb
+o7 UTERMvaluevalue
+o8 UTERMvaluezerodb

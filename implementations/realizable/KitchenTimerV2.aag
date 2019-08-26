@@ -1,0 +1,22 @@
+aag 5 4 0 6 1
+2
+4
+6
+8
+0
+11
+0
+0
+10
+0
+10 6 8
+i0 p0p0eq0time0f1dzero1b
+i1 p0b0btn2start2stop
+i2 p0b0btn2sec
+i3 p0b0btn2min
+o0 u0time0f1dcountup0time0dt1b
+o1 u0time0f1dcountdown0time0dt1b
+o2 u0time0f1dinc2seconds0time1b
+o3 u0time0f1dinc2minutes0time1b
+o4 u0time0f1dzero1b
+o5 u0time0time

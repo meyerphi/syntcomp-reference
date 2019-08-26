@@ -1,0 +1,33 @@
+aag 10 4 1 9 5
+2
+4
+6
+8
+10 15
+16
+0
+17
+12
+0
+13
+19
+18
+0
+12 2 4
+14 17 7
+16 21 9
+18 13 4
+20 7 11
+i0 PTERMcenterdposb
+i1 PTERMclickeddbuttonb
+i2 PTERMleftMostdposb
+i3 PTERMrightMostdposb
+o0 UTERMposadddposvelb
+o1 UTERMpospos
+o2 UTERMpossubdposvelb
+o3 UTERMscoreadddscoreonedbb
+o4 UTERMscorescore
+o5 UTERMscorezerodb
+o6 UTERMveladddvelonedbb
+o7 UTERMvelonedb
+o8 UTERMvelvel

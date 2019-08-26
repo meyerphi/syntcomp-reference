@@ -1,0 +1,34 @@
+aag 16 3 2 7 11
+2
+4
+6
+8 2
+10 1
+20
+11
+14
+22
+26
+31
+32
+12 6 5
+14 12 10
+16 7 4
+18 17 10
+20 18 15
+22 16 10
+24 7 2
+26 24 9
+28 27 7
+30 29 2
+32 30 27
+i0 PTERMzerodusersb
+i1 PTERMexitEventdtopb
+i2 PTERMenterEventdbottomb
+o0 UTERMusersusers
+o1 UTERMusersresetToZerodb
+o2 UTERMusersincdusersb
+o3 UTERMusersdecdusersb
+o4 UTERMstepsstopdb
+o5 UTERMstepssteps
+o6 UTERMstepsmovedb

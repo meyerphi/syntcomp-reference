@@ -1,0 +1,132 @@
+aag 74 3 4 27 67
+2
+4
+6
+8 123
+10 135
+12 145
+14 148
+38
+36
+40
+42
+0
+54
+46
+56
+0
+32
+64
+66
+19
+0
+76
+78
+74
+73
+56
+52
+82
+84
+96
+94
+102
+104
+0
+16 13 11
+18 17 14
+20 11 8
+22 20 6
+24 23 13
+26 9 7
+28 27 10
+30 29 24
+32 30 15
+34 33 19
+36 34 6
+38 37 19
+40 19 4
+42 19 5
+44 16 14
+46 44 8
+48 10 8
+50 48 12
+52 51 19
+54 52 47
+56 50 15
+58 11 7
+60 12 9
+62 60 59
+64 62 15
+66 65 34
+68 25 20
+70 69 15
+72 71 47
+74 72 66
+76 74 2
+78 77 19
+80 48 13
+82 80 15
+84 81 19
+86 10 9
+88 87 21
+90 89 13
+92 63 15
+94 92 91
+96 95 19
+98 86 2
+100 98 31
+102 101 19
+104 100 15
+106 28 13
+108 12 11
+110 109 15
+112 110 3
+114 112 107
+116 110 2
+118 116 25
+120 115 45
+122 120 119
+124 112 48
+126 90 6
+128 116 61
+130 128 127
+132 125 47
+134 132 131
+136 88 27
+138 137 12
+140 139 81
+142 141 15
+144 143 47
+146 107 73
+148 147 96
+i0 p0p0eq0coordx0f1ddec0f1dsizex1b1b
+i1 p0p0on0write
+i2 p0p0eqz0waitcounter
+o0 u0waitcounter0f1dinc0waitcounter1b
+o1 u0waitcounter0waitcounter
+o2 u0ramwrite0f1dwriteram0writecolor0xcoordinate0ycoordinate1b
+o3 u0ramwrite0f1dwriteramnone1b
+o4 u0ramwrite0ramwrite
+o5 u0rampos0f1drampos2r0xcoordinate0ycoordinate1b
+o6 u0rampos0f1drampos250coordx0f1dinc2y0coordy1b1b
+o7 u0rampos0f1drampos240coordx0f1dinc2y0coordy1b1b
+o8 u0rampos0rampos
+o9 u0extclock0f1dlow1b
+o10 u0extclock0f1dhigh1b
+o11 u0extclock0extclock
+o12 u0driver2pin0f1dlow1b
+o13 u0driver2pin0driver2pin
+o14 u0coordy0f1dinc2y0coordy1b
+o15 u0coordy0coordy
+o16 u0coordx0f1dinc2x0coordx1b
+o17 u0coordx0coordx
+o18 u0color250ramout
+o19 u0color250color25
+o20 u0color240ramout
+o21 u0color240color24
+o22 u0color0ramout
+o23 u0color0color
+o24 u0buffer2pin0f1dlow1b
+o25 u0buffer2pin0f1dhigh1b
+o26 u0buffer2pin0buffer2pin

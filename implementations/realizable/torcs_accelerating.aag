@@ -1,0 +1,17 @@
+aag 2 2 0 6 0
+2
+4
+0
+3
+2
+0
+3
+2
+i0 PTERMclearAheaddtrackb
+i1 PTERMslowdspeedb
+o0 UTERMaccelaccel
+o1 UTERMacceldeacceldb
+o2 UTERMaccelspeedUpdb
+o3 UTERMbrakesbrakes
+o4 UTERMbrakeshitBrakesdb
+o5 UTERMbrakesoffBrakesdb

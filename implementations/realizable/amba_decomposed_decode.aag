@@ -1,0 +1,14 @@
+aag 5 2 0 3 3
+2
+4
+6
+8
+10
+6 5 2
+8 4 3
+10 9 7
+i0 HBURST_0
+i1 HBURST_1
+o0 BURST4
+o1 INCR
+o2 SINGLE

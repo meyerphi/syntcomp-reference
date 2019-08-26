@@ -1,0 +1,134 @@
+aag 78 1 6 27 71
+2
+4 143
+6 144
+8 148
+10 152
+12 156
+14 91
+42
+46
+45
+0
+54
+52
+0
+77
+82
+92
+94
+96
+104
+108
+110
+114
+122
+124
+132
+134
+136
+138
+140
+0
+35
+40
+0
+16 13 11
+18 16 14
+20 7 5
+22 21 8
+24 23 18
+26 20 9
+28 26 11
+30 28 13
+32 31 15
+34 33 25
+36 8 6
+38 37 16
+40 38 34
+42 40 2
+44 39 14
+46 45 43
+48 37 18
+50 49 33
+52 51 5
+54 53 45
+56 6 4
+58 57 21
+60 58 8
+62 60 11
+64 15 12
+66 27 11
+68 26 10
+70 69 67
+72 64 63
+74 72 71
+76 75 41
+78 58 9
+80 78 10
+82 80 64
+84 56 8
+86 84 10
+88 86 64
+90 89 25
+92 91 67
+94 78 18
+96 64 62
+98 57 9
+100 99 23
+102 100 10
+104 102 64
+106 60 10
+108 106 64
+110 99 24
+112 16 15
+114 112 60
+116 85 11
+118 15 13
+120 118 117
+122 120 71
+124 118 106
+126 29 12
+128 87 13
+130 129 15
+132 130 127
+134 112 100
+136 118 80
+138 118 102
+140 112 78
+142 53 43
+144 58 35
+146 99 85
+148 146 35
+150 87 15
+152 150 117
+154 86 12
+156 155 130
+i0 p0p0write0write2control
+o0 u0write2data0f1dget2write2data0write2control1b
+o1 u0write2data0write2data
+o2 u0write2adress0f1dget2write2adress0write2control1b
+o3 u0write2adress0write2adress
+o4 u0spc0f1dlow1b
+o5 u0spc0f1dhigh1b
+o6 u0spc0spc
+o7 u0sdi0f1dget2bit0write2data0f1dtwo1b1b
+o8 u0sdi0f1dget2bit0write2data0f1dthree1b1b
+o9 u0sdi0f1dget2bit0write2data0f1dsix1b1b
+o10 u0sdi0f1dget2bit0write2data0f1dseven1b1b
+o11 u0sdi0f1dget2bit0write2data0f1done1b1b
+o12 u0sdi0f1dget2bit0write2data0f1dfour1b1b
+o13 u0sdi0f1dget2bit0write2data0f1dfive1b1b
+o14 u0sdi0f1dget2bit0write2data0f1deight1b1b
+o15 u0sdi0f1dget2bit0write2adress0f1dtwo1b1b
+o16 u0sdi0f1dget2bit0write2adress0f1dthree1b1b
+o17 u0sdi0f1dget2bit0write2adress0f1dsix1b1b
+o18 u0sdi0f1dget2bit0write2adress0f1dseven1b1b
+o19 u0sdi0f1dget2bit0write2adress0f1done1b1b
+o20 u0sdi0f1dget2bit0write2adress0f1dfour1b1b
+o21 u0sdi0f1dget2bit0write2adress0f1dfive1b1b
+o22 u0sdi0f1dlow1b
+o23 u0sdi0sdi
+o24 u0cs0f1dlow1b
+o25 u0cs0f1dhigh1b
+o26 u0cs0cs

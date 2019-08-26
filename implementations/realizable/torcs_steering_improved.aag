@@ -1,0 +1,26 @@
+aag 5 4 0 8 1
+2
+4
+6
+8
+11
+10
+0
+0
+11
+0
+0
+10
+10 5 3
+i0 PTERMleftOfCenterdtrackPosb
+i1 PTERMrightOfCenterdtrackPosb
+i2 PTERMturningLeftdangleb
+i3 PTERMturningRightdangleb
+o0 UTERMmodecenteringdb
+o1 UTERMmodekeepdb
+o2 UTERMmodemode
+o3 UTERMmodestraightendb
+o4 UTERMsteersteer
+o5 UTERMsteersteerLeftdangleb
+o6 UTERMsteersteerRightdangleb
+o7 UTERMsteersteerStraightdb

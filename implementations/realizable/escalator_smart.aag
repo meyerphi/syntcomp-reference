@@ -1,0 +1,43 @@
+aag 32 4 3 3 25
+2
+4
+6
+8
+10 48
+12 50
+14 64
+30
+32
+36
+16 12 9
+18 15 13
+20 19 10
+22 15 11
+24 13 7
+26 24 23
+28 27 21
+30 28 17
+32 16 11
+34 14 10
+36 35 26
+38 9 2
+40 38 13
+42 41 11
+44 42 13
+46 45 9
+48 46 36
+50 46 28
+52 13 8
+54 53 10
+56 43 14
+58 22 5
+60 55 7
+62 60 59
+64 62 57
+i0 PTERMenterEventdbottomb
+i1 PTERMenterEventdtopb
+i2 PTERMexitEventdbottomb
+i3 PTERMexitEventdtopb
+o0 UTERMstepssteps
+o1 UTERMstepsmoveUpdb
+o2 UTERMstepsmoveDowndb

@@ -1,0 +1,60 @@
+aag 38 7 1 7 30
+2
+4
+6
+8
+10
+12
+14
+16 77
+47
+52
+62
+58
+41
+72
+74
+18 12 10
+20 19 5
+22 6 2
+24 23 20
+26 11 3
+28 27 5
+30 29 8
+32 13 5
+34 33 3
+36 35 6
+38 31 19
+40 38 37
+42 41 25
+44 25 14
+46 45 43
+48 14 2
+50 48 20
+52 50 7
+54 14 3
+56 54 16
+58 56 20
+60 59 51
+62 60 46
+64 11 2
+66 13 4
+68 67 65
+70 9 7
+72 70 69
+74 73 40
+76 43 14
+i0 PTERMenterEventdbottomb
+i1 PTERMenterEventdtopb
+i2 PTERMexitEventdbottomb
+i3 PTERMexitEventdtopb
+i4 PTERMmovingDowndstepsb
+i5 PTERMmovingUpdstepsb
+i6 PTERMzerodusersb
+o0 UTERMstepsmoveDowndb
+o1 UTERMstepsmoveUpdb
+o2 UTERMstepssteps
+o3 UTERMstepsstopdb
+o4 UTERMusersdecdusersb
+o5 UTERMusersincdusersb
+o6 UTERMusersusers

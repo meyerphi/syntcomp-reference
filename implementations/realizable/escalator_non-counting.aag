@@ -1,0 +1,14 @@
+aag 5 2 0 3 3
+2
+4
+6
+10
+8
+6 5 2
+8 4 3
+10 9 7
+i0 PTERMexitEventdtopb
+i1 PTERMenterEventdbottomb
+o0 UTERMstepsstopdb
+o1 UTERMstepssteps
+o2 UTERMstepsmovedb

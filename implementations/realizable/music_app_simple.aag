@@ -1,0 +1,16 @@
+aag 5 4 0 3 1
+2
+4
+6
+8
+0
+11
+10
+10 3 5
+i0 PTERMleaveAppdsysb
+i1 PTERMpauseButtondsysb
+i2 PTERMplayButtondsysb
+i3 PTERMresumeAppdsysb
+o0 UTERMmpOutmpOut
+o1 UTERMmpOutpausedmpInb
+o2 UTERMmpOutplaydtrtrackPosdmpInbb

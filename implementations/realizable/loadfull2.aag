@@ -1,0 +1,14 @@
+aag 6 3 1 2 2
+2
+4
+6
+8 13
+4
+9
+10 6 2
+12 8 10
+i0 idle
+i1 request0
+i2 request1
+o0 grant0
+o1 grant1
