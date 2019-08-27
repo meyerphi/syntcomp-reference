@@ -1,0 +1,25 @@
+aag 11 3 1 5 7
+2
+4
+6
+8 23
+0
+0
+9
+0
+0
+10 7 4
+12 6 5
+14 13 11
+16 15 3
+18 5 2
+20 18 7
+22 21 17
+i0 u0counter0f1dinc0counter1b
+i1 u0counter0f1ddec0counter1b
+i2 u0counter0counter
+o0 p0p0in2range0f1dinc0counter1b
+o1 p0p0in2range0f1ddec0counter1b
+o2 p0p0in2range0counter
+o3 p0p0button2pressed0up
+o4 p0p0button2pressed0down

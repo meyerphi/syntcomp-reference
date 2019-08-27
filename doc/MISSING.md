@@ -20,48 +20,7 @@ For some specifications, there is yet no reference implemenation.
 
 ### Unrealizable specifications:
 
-- `generalized_buffer_unreal1_2_2`
-- `generalized_buffer_unreal2_2`
 - `ModdifiedLedMatrix4X`
-- `OneCounterGuiA0`
-- `OneCounterGuiA1`
-- `OneCounterGuiA2`
-- `OneCounterGuiA3`
-- `OneCounterGuiA4`
-- `OneCounterGuiA5`
-- `OneCounterGuiA6`
-- `OneCounterGuiA7`
-- `OneCounterGuiA8`
-- `OneCounterGui`
-- `TwoCounters2`
-- `TwoCounters5`
-- `TwoCountersDisButA0`
-- `TwoCountersDisButA1`
-- `TwoCountersDisButA2`
-- `TwoCountersDisButA3`
-- `TwoCountersDisButA4`
-- `TwoCountersDisButA5`
-- `TwoCountersDisButA6`
-- `TwoCountersDisButA7`
-- `TwoCountersDisButA8`
-- `TwoCountersDisButA9`
-- `TwoCountersDisButAC`
-- `TwoCountersGui`
-- `TwoCountersInRangeA0`
-- `TwoCountersInRangeA1`
-- `TwoCountersInRangeA2`
-- `TwoCountersInRangeA3`
-- `TwoCountersInRangeA4`
-- `TwoCountersInRangeA5`
-- `TwoCountersInRangeM0`
-- `TwoCountersInRangeM1`
-- `TwoCountersInRangeM2`
-- `TwoCountersInRangeM3`
-- `TwoCountersInRangeM4`
-- `TwoCountersInRangeM5`
-- `TwoCountersInRange`
-- `TwoCountersRefined`
-- `TwoCounters`
 
 # Unverified implementations
 

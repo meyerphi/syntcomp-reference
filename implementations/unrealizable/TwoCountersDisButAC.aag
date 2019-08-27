@@ -1,0 +1,126 @@
+aag 82 13 3 15 66
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28 139
+30 152
+32 164
+36
+0
+0
+36
+0
+0
+0
+36
+0
+43
+46
+0
+0
+0
+0
+34 31 29
+36 34 33
+38 30 28
+40 38 33
+42 41 35
+44 35 32
+46 45 31
+48 20 19
+50 15 12
+52 14 13
+54 53 51
+56 11 9
+58 56 7
+60 58 55
+62 61 4
+64 10 8
+66 57 6
+68 65 55
+70 67 59
+72 70 68
+74 73 5
+76 63 3
+78 76 75
+80 5 2
+82 80 60
+84 83 79
+86 25 23
+88 24 22
+90 87 27
+92 90 89
+94 92 85
+96 94 34
+98 94 30
+100 86 26
+102 100 85
+104 103 99
+106 105 28
+108 107 97
+110 109 33
+112 111 97
+114 113 48
+116 21 18
+118 110 31
+120 102 34
+122 120 32
+124 123 119
+126 125 116
+128 127 115
+130 129 17
+132 19 16
+134 132 21
+136 134 125
+138 137 131
+140 117 49
+142 141 17
+144 143 135
+146 102 30
+148 147 95
+150 145 45
+152 150 149
+154 116 33
+156 155 49
+158 157 17
+160 134 33
+162 161 159
+164 163 120
+i0 u0window0f1denable2button0up1b
+i1 u0window0f1denable2button0down1b
+i2 u0window0f1ddisable2button0up1b
+i3 u0window0f1ddisable2button0down1b
+i4 u0window0window
+i5 u0selected0f1dtoggle0selected1b
+i6 u0selected0selected
+i7 u0second2counter0f1dincrement0second2counter1b
+i8 u0second2counter0f1ddecrement0second2counter1b
+i9 u0second2counter0second2counter
+i10 u0first2counter0f1dincrement0first2counter1b
+i11 u0first2counter0f1ddecrement0first2counter1b
+i12 u0first2counter0first2counter
+o0 p0p0second0selected
+o1 p0p0in2range0f1dincrement0f1dincrement0second2counter1b1b
+o2 p0p0in2range0f1dincrement0f1dincrement0first2counter1b1b
+o3 p0p0in2range0f1dincrement0second2counter1b
+o4 p0p0in2range0f1dincrement0first2counter1b
+o5 p0p0in2range0f1ddecrement0f1dincrement0second2counter1b1b
+o6 p0p0in2range0f1ddecrement0f1dincrement0first2counter1b1b
+o7 p0p0in2range0f1ddecrement0second2counter1b
+o8 p0p0in2range0f1ddecrement0first2counter1b
+o9 p0p0in2range0second2counter
+o10 p0p0in2range0first2counter
+o11 p0p0first0selected
+o12 p0p0button2pressed0up
+o13 p0p0button2pressed0switch
+o14 p0p0button2pressed0down

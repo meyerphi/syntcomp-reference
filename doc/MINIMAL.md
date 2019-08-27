@@ -14,12 +14,17 @@ Some specifications only have a large implementation so far that can quite
 possibly be improved. Here is a list based on a threshold of size 100:
 
 - `amba_case_study_2`: 2783
-- `KitchenTimerV5.aag`: 456
-- `KitchenTimerV6.aag`: 553
-- `KitchenTimerV7.aag`: 586
-- `KitchenTimerV8.aag`: 586
-- `KitchenTimerV9.aag`: 635
-- `KitchenTimerV10.aag`: 513
+- `generalized_buffer_unreal1_2_2`: 194
+- `generalized_buffer_unreal2_2`: 248
+- `KitchenTimerV5`: 456
+- `KitchenTimerV6`: 553
+- `KitchenTimerV7`: 586
+- `KitchenTimerV8`: 586
+- `KitchenTimerV9`: 635
+- `KitchenTimerV10`: 513
+- `OneCounterGuiA6`: 153
+- `OneCounterGuiA7`: 138
+- `OneCounterGuiA8`: 169
 
 ## Parameterized specifications
 
@@ -29,7 +34,7 @@ the same structure by following a certain construction scheme. Here, a list
 of the sizes of these parameterized implementations depending on *n* is given.
 
 Note that these are all only upper bounds on the size of the minimal
-implementation.  Some may also only be optimal asymptotically, as often there
+implementation. Some may also only be optimal asymptotically, as often there
 is already a smaller implementation for small values of *n*. For
 implementations with a logarithmic component, often the exact constants are yet
 unknown and only *O(log2(n))* is given. Here, *log2(n)* is the logarithm of *n*
