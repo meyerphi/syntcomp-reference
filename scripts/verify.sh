@@ -84,7 +84,7 @@ if [ $result -eq 0 ]; then
     else
         echo -n "UNKNOWN"
     fi
-elif [ $result -eq 124 ] || [ result -eq 137 ]; then
+elif [ $result -eq 124 ] || [ $result -eq 137 ]; then
     echo -n "TIMEOUT"
 else
     echo -n "ERROR"
