@@ -49,5 +49,5 @@ needed.
 The specification `simple_arbiter_2.tlsf` in previous SYNTCOMP iterations had a
 typo and used `n=3` in its parameter specification, making it equivalent to
 `simple_arbiter_3.tlsf`. This is fixed in this selection of benchmarks, where
-we use n=2. However this needs to be taken into account when comparing the
+we use `n=2`. However this needs to be taken into account when comparing the
 reference implementation to previous implementations from SYNTCOMP.
