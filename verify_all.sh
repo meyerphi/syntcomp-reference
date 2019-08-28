@@ -37,6 +37,6 @@ for FILE in $(find $SPECIFICATIONS -mindepth 2 -maxdepth 2 -type f -name "*.tlsf
 
         echo ",$runtime" >>$RESULTS
     else
-        echo "NO_REFERENCE_IMPLEMENTATION" >>$RESULTS
+        echo "-,-,-,NO_IMPLEMENTATION,-" >>$RESULTS
     fi
 done
