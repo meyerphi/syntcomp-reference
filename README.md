@@ -25,7 +25,7 @@ To start the verification process for all specifications, simply run
 where `<TIMELIMIT>` should be the time limit for the verification in seconds.
 The results will be output into the file `results.csv`.
 
-The results of a run on a machine equipped with an Intel Core i7-4810MQ CPU,
+The results of a run on a machine equipped with an Intel Core i7-4810MQ CPU
 and 16 GB of memory and with a timeout of one hour are given in
 [`results_verification.csv`](results_verification.csv)
 
