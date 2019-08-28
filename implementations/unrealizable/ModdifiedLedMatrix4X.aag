@@ -1,0 +1,57 @@
+aag 25 25 0 3 0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+0
+0
+1
+i0 u0ramwrite0f1dwriteram0writecolor0xcoordinate0ycoordinate1b
+i1 u0ramwrite0f1dwriteramnone1b
+i2 u0ramwrite0ramwrite
+i3 u0rampos0f1drampos2r0xcoordinate0ycoordinate1b
+i4 u0rampos0f1drampos250coordx0f1dinc2y0coordy1b1b
+i5 u0rampos0f1drampos240coordx0f1dinc2y0coordy1b1b
+i6 u0rampos0rampos
+i7 u0extclock0f1dlow1b
+i8 u0extclock0f1dhigh1b
+i9 u0extclock0extclock
+i10 u0driver2pin0f1dlow1b
+i11 u0driver2pin0driver2pin
+i12 u0coordy0f1dinc2y0coordy1b
+i13 u0coordy0coordy
+i14 u0coordx0f1dinc2x0coordx1b
+i15 u0coordx0coordx
+i16 u0color250ramout
+i17 u0color250color25
+i18 u0color240ramout
+i19 u0color240color24
+i20 u0color0ramout
+i21 u0color0color
+i22 u0buffer2pin0f1dlow1b
+i23 u0buffer2pin0f1dhigh1b
+i24 u0buffer2pin0buffer2pin
+o0 p0eq0coordx0f1ddec0f1dsizex1b1b
+o1 p0on0write
+o2 p0eqz0waitcounter

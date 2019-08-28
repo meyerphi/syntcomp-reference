@@ -1,8 +1,6 @@
 # Missing reference implementations
 
-For some specifications, there is yet no reference implemenation.
-
-### Realizable specifications:
+For the following specifications, there is yet no reference implemenation:
 
 - `amba_case_study_3`
 - `full_arbiter_10`
@@ -17,10 +15,6 @@ For some specifications, there is yet no reference implemenation.
 - `generalized_buffer_4`
 - `generalized_buffer_5`
 - `generalized_buffer_6`
-
-### Unrealizable specifications:
-
-- `ModdifiedLedMatrix4X`
 
 # Unverified implementations
 
