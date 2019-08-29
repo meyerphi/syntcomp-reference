@@ -11,7 +11,7 @@ verification of all smaller implementations.
 ## Large implementations
 
 Some specifications only have a large implementation so far that can quite
-possibly be improved. Here is a list based on a threshold of size 100:
+possibly be improved. Here is a list based on a threshold of size 120:
 
 - `amba_case_study_2`: 2783
 - `generalized_buffer_unreal1_2_2`: 194
