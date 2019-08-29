@@ -51,7 +51,7 @@ Specification | Latches | And gates
 `collector_v4_`*n* | *n* | *3n*
 `detector_`*n* | *n* | *3n*
 `full_arbiter_`*n* | *2n* | *3n*
-`full_arbiter_enc_`*n* | *2n+2* | *7n+O(1)*
+`full_arbiter_enc_`*n* | *2n+2* | *7n+O(log2(n)+log2(n+1))*
 `load_balancer_`*n* | *2n-1* | *5n-5*
 `ltl2dba_alpha_`*n* (linear) | *n+1* | *n+2*
 `ltl2dba_alpha_`*n* (binary) | *O(log2(n+1))* | *O(log2(n+1))*

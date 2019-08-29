@@ -83,7 +83,7 @@ escalator_non-reactive,realizable,0,2,0,0,0,SUCCESS,.07
 EscalatorNonReactive,realizable,0,2,0,0,0,SUCCESS,.07
 escalator_smart,realizable,4,3,3,23,26,SUCCESS,.35
 EscalatorSmart,realizable,4,3,3,23,26,SUCCESS,.39
-full_arbiter_10,realizable,10,10,-,-,-,NO_IMPLEMENTATION,-
+full_arbiter_10,realizable,10,10,20,30,50,TIMEOUT,3600.00
 full_arbiter_12,realizable,12,12,-,-,-,NO_IMPLEMENTATION,-
 full_arbiter_2,realizable,2,2,2,4,6,SUCCESS,.22
 full_arbiter_3,realizable,3,3,6,9,15,SUCCESS,.90
@@ -92,7 +92,7 @@ full_arbiter_5,realizable,5,5,10,15,25,SUCCESS,61.70
 full_arbiter_6,realizable,6,6,12,18,30,SUCCESS,2130.18
 full_arbiter_7,realizable,7,7,14,21,35,TIMEOUT,3600.00
 full_arbiter_8,realizable,8,8,16,24,40,TIMEOUT,3600.00
-full_arbiter_enc_10,realizable,4,4,-,-,-,NO_IMPLEMENTATION,-
+full_arbiter_enc_10,realizable,4,4,22,63,85,TIMEOUT,3600.00
 full_arbiter_enc_12,realizable,4,4,-,-,-,NO_IMPLEMENTATION,-
 full_arbiter_enc_2,realizable,1,2,2,5,7,SUCCESS,.21
 full_arbiter_enc_4,realizable,2,3,10,20,30,SUCCESS,165.18
