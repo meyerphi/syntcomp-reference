@@ -22,9 +22,9 @@ possibly be improved. Here is a list based on a threshold of size 120:
 - `KitchenTimerV8`: 586
 - `KitchenTimerV9`: 635
 - `KitchenTimerV10`: 513
-- `OneCounterGuiA6`: 153
+- `OneCounterGuiA6`: 150
 - `OneCounterGuiA7`: 138
-- `OneCounterGuiA8`: 169
+- `OneCounterGuiA8`: 142
 
 ## Parameterized specifications
 
