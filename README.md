@@ -20,7 +20,7 @@ and additionally a few utility scripts for inspecting them.
 
 To start the verification process for all specifications, simply run
 ```
-./verify_all <TIMELIMIT>
+./verify_all.sh <TIMELIMIT>
 ```
 where `<TIMELIMIT>` should be the time limit for the verification in seconds.
 The results will be output into the file `results.csv`.
@@ -28,6 +28,13 @@ The results will be output into the file `results.csv`.
 The results of a run on a machine equipped with an Intel Core i7-4810MQ CPU
 and 16 GB of memory and with a timeout of one hour are given in
 [`results_verification.csv`](results_verification.csv)
+
+To simply collect all combined files for model checking with a different tool,
+one can call the script with time limit 0:
+```
+./verify_all.sh 0
+```
+The combined files will then be output into the folder `combined`.
 
 ## Adding new reference implementations
 

@@ -9,7 +9,7 @@ set -e
 set -o pipefail
 
 if [ "$#" -lt 4 ]; then
-    echo "Usage: $0 <implementation.aag> <specification.tlsf> <realizable/unrealizable> <timelimit>"
+    echo "Usage: $0 <implementation.aag> <specification.tlsf> <realizable/unrealizable> <timelimit/0> [output.combined.aag]"
     exit 1
 fi
 
@@ -32,7 +32,13 @@ BASE=$(basename ${SPECIFICATION%.tlsf})
 TLSF_IN=/tmp/$BASE.monitor.in
 TLSF_OUT=/tmp/$BASE.monitor.out
 MONITOR_FILE=/tmp/$BASE.monitor.aag
-COMBINED_FILE=/tmp/$BASE.combined.aag
+if [ "$#" -lt 5 ]; then
+    clean_combined=true
+    COMBINED_FILE=/tmp/$BASE.combined.aag
+else
+    clean_combined=false
+    COMBINED_FILE=$5
+fi
 RESULT_FILE=/tmp/$BASE.result
 
 function clean_exit {
@@ -42,7 +48,9 @@ function clean_exit {
     rm -f $TLSF_IN
     rm -f $TLSF_OUT
     rm -f $MONITOR_FILE
-    rm -f $COMBINED_FILE
+    if [ "$clean_combined" == true ]; then
+        rm -f $COMBINED_FILE
+    fi
     rm -f $RESULT_FILE
 
     exit $exit_code
@@ -77,6 +85,12 @@ syfco -f smv -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2
 
 # combine monitor with implementation
 combine-aiger $combine_aiger_options $MONITOR_FILE $IMPLEMENTATION >$COMBINED_FILE
+
+if [ $TIMELIMIT -le 0 ]; then
+    # only output combined file
+    echo "COMBINED"
+    clean_exit 0
+fi
 
 # model check solution
 set +e

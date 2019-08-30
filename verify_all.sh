@@ -9,6 +9,7 @@ set -o pipefail
 
 if [ "$#" -lt 1 ]; then
     echo "Usage: $0 <timelimit>"
+    echo "If <timelimit> is 0, then only the combined files will be output for separate model checking."
     exit 1
 fi
 
@@ -16,15 +17,23 @@ TIMELIMIT=$1
 
 SPECIFICATIONS=specifications
 IMPLEMENTATIONS=implementations
+COMBINATIONS=combined
 RESULTS=results.csv
 
 echo "specification,realizability_status,num_inputs,num_outputs,controller_latches,controller_and_gates,controller_size,result_verification,time_verification" >$RESULTS
+
+if [ $TIMELIMIT -eq 0 ]; then
+    mkdir -p $COMBINATIONS
+    action="Combining"
+else
+    action="Verifying"
+fi
 
 for SPECIFICATION in $(find $SPECIFICATIONS -mindepth 2 -maxdepth 2 -type f -name "*.tlsf" | sort); do
     BASE=$(basename ${SPECIFICATION%.tlsf})
     REALIZABLE=$(basename $(dirname $SPECIFICATION))
 
-    echo "Verifying $BASE as $REALIZABLE"
+    echo "$action $BASE ($REALIZABLE)"
 
     NUM_INPUTS=$(syfco --print-input-signals $SPECIFICATION | sed -e 's/\s*,\s*/ /g' | wc -w)
     NUM_OUTPUTS=$(syfco --print-output-signals $SPECIFICATION | sed -e 's/\s*,\s*/ /g' | wc -w)
@@ -36,9 +45,16 @@ for SPECIFICATION in $(find $SPECIFICATIONS -mindepth 2 -maxdepth 2 -type f -nam
         size=$(scripts/print_size.sh $IMPLEMENTATION)
         echo -n "$size," >>$RESULTS
 
+        if [ $TIMELIMIT -eq 0 ]; then
+            COMBINED=$COMBINATIONS/$BASE.combined.aag
+            VERIFICATION_OPTIONS="0 $COMBINED"
+        else
+            VERIFICATION_OPTIONS="$TIMELIMIT"
+        fi
+
         runtime="$(date +%s%N)"
         set +e
-        result=$(scripts/verify.sh $IMPLEMENTATION $SPECIFICATION $REALIZABLE $TIMELIMIT 2>&1)
+        result=$(scripts/verify.sh $IMPLEMENTATION $SPECIFICATION $REALIZABLE $VERIFICATION_OPTIONS 2>&1)
         set -e
         runtime=$(($(date +%s%N)-runtime))
         runtime=$(bc -l <<< "scale=2; $runtime/1000000000")
