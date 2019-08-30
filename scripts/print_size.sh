@@ -15,4 +15,4 @@ latches=$(head -n 1 $INPUT | cut -d' ' -f4);
 and_gates=$(head -n 1 $INPUT | cut -d' ' -f6);
 size=$(($latches + $and_gates))
 
-echo -n "$latches,$and_gates,$size"
+echo "$latches,$and_gates,$size"

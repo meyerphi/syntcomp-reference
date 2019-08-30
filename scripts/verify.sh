@@ -9,62 +9,74 @@ set -e
 set -o pipefail
 
 if [ "$#" -lt 4 ]; then
-    echo "Usage: $0 <controller.aag> <specification.tlsf> <realizable/unrealizable> <timelimit>"
+    echo "Usage: $0 <implementation.aag> <specification.tlsf> <realizable/unrealizable> <timelimit>"
     exit 1
 fi
 
-INPUT=$1
-TLSF_FILE=$2
+IMPLEMENTATION=$1
+SPECIFICATION=$2
 REALIZABLE=$3
 TIMELIMIT=$4
 
-#echo "Verifying $INPUT against $TLSF_FILE"
+if [ ! -f $IMPLEMENTATION ]; then
+    echo "ERROR: Implementation not found"
+    exit 1
+fi
+if [ ! -f $SPECIFICATION ]; then
+    echo "ERROR: Specification not found"
+    exit 1
+fi
 
 # temporary files
-BASE_FILE=$(basename ${INPUT%.aag})
-BASE_TLSF_FILE=$(basename ${TLSF_FILE%.tlsf})
-MONITOR_AIGER_FILE=/tmp/$BASE_FILE.monitor.aag
-COMBINED_FILE=/tmp/$BASE_FILE.combined.aag
-SMV_FILE=/tmp/$BASE_FILE.smv
-RESULT_FILE=/tmp/$BASE_FILE.result
-TLSF_IN=/tmp/$BASE_TLSF_FILE.monitor.in
-TLSF_OUT=/tmp/$BASE_TLSF_FILE.monitor.out
-AAG_IN=/tmp/$BASE_FILE.controller.in
-AAG_OUT=/tmp/$BASE_FILE.controller.out
+BASE=$(basename ${SPECIFICATION%.tlsf})
+TLSF_IN=/tmp/$BASE.monitor.in
+TLSF_OUT=/tmp/$BASE.monitor.out
+MONITOR_FILE=/tmp/$BASE.monitor.aag
+COMBINED_FILE=/tmp/$BASE.combined.aag
+RESULT_FILE=/tmp/$BASE.result
+
+function clean_exit {
+    exit_code=$1
+
+    # clean temporary files
+    rm -f $TLSF_IN
+    rm -f $TLSF_OUT
+    rm -f $MONITOR_FILE
+    rm -f $COMBINED_FILE
+    rm -f $RESULT_FILE
+
+    exit $exit_code
+}
 
 # verify if inputs and outputs match
-syfco --print-input-signals $TLSF_FILE | sed -e 's/\s*,\s*/\n/g' | sort >$TLSF_IN
-syfco --print-output-signals $TLSF_FILE | sed -e 's/\s*,\s*/\n/g' | sort >$TLSF_OUT
-# need to set +e because there may be 0 inputs or 0 outputs
-set +e
-grep '^i[0-9]* ' $INPUT | sed -e 's/^i[0-9]* //' | sort >$AAG_IN
-grep '^o[0-9]* ' $INPUT | sed -e 's/^o[0-9]* //' | sort >$AAG_OUT
-set -e
+syfco --print-input-signals $SPECIFICATION | sed -e 's/\s*,\s*/\n/g' | sort >$TLSF_IN
+syfco --print-output-signals $SPECIFICATION | sed -e 's/\s*,\s*/\n/g' | sort >$TLSF_OUT
 if [ "$REALIZABLE" == 'unrealizable' ]; then
     tmp=$TLSF_IN
     TLSF_IN=$TLSF_OUT
     TLSF_OUT=$tmp
 fi
-if ! diff -q $AAG_IN $TLSF_IN; then
+if ! diff -q $TLSF_IN <(grep '^i[0-9]* ' $IMPLEMENTATION | sed -e 's/^i[0-9]* //' | sort) >/dev/null; then
     echo "ERROR: Inputs don't match"
-    exit 1
+    clean_exit 1
 fi
-if ! diff -q $AAG_OUT $TLSF_OUT; then
+if ! diff -q $TLSF_OUT <(grep '^o[0-9]* ' $IMPLEMENTATION | sed -e 's/^o[0-9]* //' | sort) >/dev/null; then
     echo "ERROR: Outputs don't match"
-    exit 1
+    clean_exit 1
 fi
 
 # build a monitor for the formula
-syfco -f smv -m fully $TLSF_FILE >$SMV_FILE
 if [ "$REALIZABLE" == 'unrealizable' ]; then
-    sed -e 's/LTLSPEC \(.*\)$/LTLSPEC !(\1)/' -i $SMV_FILE
+    combine_aiger_options="--moore"
+    rewrite_rule='s/LTLSPEC \(.*\)$/LTLSPEC !(\1)/'
+else
+    combine_aiger_options=""
+    rewrite_rule='/^/n'
 fi
-smvtoaig -L ltl2smv -a $SMV_FILE >$MONITOR_AIGER_FILE 2>/dev/null
-COMBINE_AIGER_OPTIONS=""
-if [ "$REALIZABLE" == 'unrealizable' ]; then
-    COMBINE_AIGER_OPTIONS="--moore"
-fi
-combine-aiger $COMBINE_AIGER_OPTIONS $MONITOR_AIGER_FILE $INPUT >$COMBINED_FILE
+syfco -f smv -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2smv -a $SMV_FILE >$MONITOR_FILE 2>/dev/null
+
+# combine monitor with implementation
+combine-aiger $combine_aiger_options $MONITOR_FILE $IMPLEMENTATION >$COMBINED_FILE
 
 # model check solution
 set +e
@@ -78,24 +90,19 @@ set -e
 # check result
 if [ $result -eq 0 ]; then
     if grep -q 'specification .* is true' $RESULT_FILE; then
-        echo -n "SUCCESS"
+        echo "SUCCESS"
+        clean_exit 0
     elif grep -q "specification.*is false" $RESULT_FILE; then
-        echo -n "FAILURE"
+        echo "FAILURE"
+        clean_exit 2
     else
-        echo -n "UNKNOWN"
+        echo "ERROR: Unknown model checking result"
+        clean_exit 1
     fi
 elif [ $result -eq 124 ] || [ $result -eq 137 ]; then
-    echo -n "TIMEOUT"
+    echo "TIMEOUT"
+    clean_exit 3
 else
-    echo -n "ERROR"
+    echo "ERROR: Model checking error"
+    clean_exit 1
 fi
-
-# clean temporary files
-rm $MONITOR_AIGER_FILE
-rm $COMBINED_FILE
-rm $SMV_FILE
-rm $RESULT_FILE
-rm $TLSF_IN
-rm $TLSF_OUT
-rm $AAG_IN
-rm $AAG_OUT
