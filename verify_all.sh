@@ -20,7 +20,7 @@ IMPLEMENTATIONS=implementations
 COMBINATIONS=combined
 RESULTS=results.csv
 
-echo "specification,realizability_status,num_inputs,num_outputs,controller_latches,controller_and_gates,controller_size,result_verification,time_verification" >$RESULTS
+echo "specification,realizability_status,num_inputs,num_outputs,implementation_latches,implementation_and_gates,implementation_size,result_verification,time_verification" >$RESULTS
 
 if [ $TIMELIMIT -eq 0 ]; then
     mkdir -p $COMBINATIONS

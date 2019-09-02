@@ -1,4 +1,4 @@
-specification,realizability_status,num_inputs,num_outputs,controller_latches,controller_and_gates,controller_size,result_verification,time_verification
+specification,realizability_status,num_inputs,num_outputs,implementation_latches,implementation_and_gates,implementation_size,result_verification,time_verification
 ActionConverter,realizable,5,6,0,4,4,SUCCESS,.09
 amba_case_study_2,realizable,7,9,6,1224,1230,SUCCESS,69.86
 amba_case_study_3,realizable,9,10,8,12561,12569,TIMEOUT,3600.00
