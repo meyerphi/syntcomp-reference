@@ -2,12 +2,8 @@
 
 For the following specifications, there is yet no reference implemenation:
 
-- `genbuf3`
-- `genbuf4`
 - `genbuf5`
 - `genbuf6`
-- `generalized_buffer_3`
-- `generalized_buffer_4`
 - `generalized_buffer_5`
 - `generalized_buffer_6`
 
@@ -26,6 +22,10 @@ timeout of one hour when verifying the implementation:
 - `full_arbiter_enc_8`
 - `full_arbiter_enc_10`
 - `full_arbiter_enc_12`
+- `genbuf3`
+- `genbuf4`
+- `generalized_buffer_3`
+- `generalized_buffer_4`
 - `ltl2dba_C2_12`
 - `ltl2dba_Q_12`
 - `narylatch_12`

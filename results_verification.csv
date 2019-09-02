@@ -102,13 +102,13 @@ Gamelogic,realizable,5,25,2,26,28,SUCCESS,.32
 GamemodeChooser,realizable,9,11,0,24,24,SUCCESS,.12
 Gamemodule,realizable,4,4,1,3,4,SUCCESS,.08
 genbuf2,realizable,4,4,3,85,88,SUCCESS,14.98
-genbuf3,realizable,5,5,-,-,-,NO_IMPLEMENTATION,-
-genbuf4,realizable,6,6,-,-,-,NO_IMPLEMENTATION,-
+genbuf3,realizable,5,5,158,2570,2728,TIMEOUT,3600.00
+genbuf4,realizable,6,6,8,9809,9817,TIMEOUT,3600.00
 genbuf5,realizable,7,7,-,-,-,NO_IMPLEMENTATION,-
 genbuf6,realizable,8,8,-,-,-,NO_IMPLEMENTATION,-
 generalized_buffer_2,realizable,4,4,3,63,66,SUCCESS,17.74
-generalized_buffer_3,realizable,5,5,-,-,-,NO_IMPLEMENTATION,-
-generalized_buffer_4,realizable,6,6,-,-,-,NO_IMPLEMENTATION,-
+generalized_buffer_3,realizable,5,5,168,5735,5903,TIMEOUT,3600.00
+generalized_buffer_4,realizable,6,6,8,13313,13321,TIMEOUT,3600.00
 generalized_buffer_5,realizable,7,7,-,-,-,NO_IMPLEMENTATION,-
 generalized_buffer_6,realizable,8,8,-,-,-,NO_IMPLEMENTATION,-
 increment,realizable,1,2,0,0,0,SUCCESS,.07
