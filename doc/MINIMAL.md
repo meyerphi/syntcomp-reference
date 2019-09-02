@@ -14,6 +14,7 @@ Some specifications only have a large implementation so far that can quite
 possibly be improved. Here is a list based on a threshold of size 120:
 
 - `amba_case_study_2`: 1230
+- `amba_case_study_3`: 12569
 - `generalized_buffer_unreal1_2_2`: 194
 - `generalized_buffer_unreal2_2`: 248
 - `KitchenTimerV5`: 456

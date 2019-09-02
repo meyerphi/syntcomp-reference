@@ -1,7 +1,7 @@
 specification,realizability_status,num_inputs,num_outputs,controller_latches,controller_and_gates,controller_size,result_verification,time_verification
 ActionConverter,realizable,5,6,0,4,4,SUCCESS,.09
 amba_case_study_2,realizable,7,9,6,1224,1230,SUCCESS,69.86
-amba_case_study_3,realizable,9,10,-,-,-,NO_IMPLEMENTATION,-
+amba_case_study_3,realizable,9,10,8,12561,12569,TIMEOUT,3600.00
 amba_decomposed_arbiter_10,realizable,11,12,11,66,77,SUCCESS,3.69
 amba_decomposed_arbiter_12,realizable,13,14,13,78,91,SUCCESS,9.24
 amba_decomposed_arbiter_2,realizable,3,4,2,9,11,SUCCESS,.14

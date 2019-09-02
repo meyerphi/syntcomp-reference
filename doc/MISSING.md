@@ -2,7 +2,6 @@
 
 For the following specifications, there is yet no reference implemenation:
 
-- `amba_case_study_3`
 - `genbuf3`
 - `genbuf4`
 - `genbuf5`
@@ -17,6 +16,7 @@ For the following specifications, there is yet no reference implemenation:
 For the following reference implementations, the model checker reaches the
 timeout of one hour when verifying the implementation:
 
+- `amba_case_study_3`
 - `detector_12`
 - `full_arbiter_7`
 - `full_arbiter_8`
