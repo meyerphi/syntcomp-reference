@@ -447,6 +447,7 @@ ltl2dba_theta_5,unrealizable,7,1,1,0,1,SUCCESS,.12
 ltl2dba_theta_6,unrealizable,8,1,1,0,1,SUCCESS,.12
 ltl2dba_theta_7,unrealizable,9,1,1,0,1,SUCCESS,.12
 ltl2dba_theta_8,unrealizable,10,1,1,0,1,SUCCESS,.12
+ltl2dpa25,unrealizable,4,3,2,0,2,SUCCESS,.14
 ModdifiedLedMatrix4X,unrealizable,3,25,0,0,0,SUCCESS,.37
 OneCounterGuiA0,unrealizable,9,9,1,16,17,SUCCESS,.13
 OneCounterGuiA1,unrealizable,9,9,2,36,38,SUCCESS,.18
