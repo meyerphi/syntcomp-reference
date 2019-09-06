@@ -21,11 +21,11 @@ possibly be improved. Here is a list based on a threshold of size 120:
 - `generalized_buffer_4`: 13321
 - `generalized_buffer_unreal1_2_2`: 136
 - `generalized_buffer_unreal2_2`: 248
-- `KitchenTimerV5`: 456
-- `KitchenTimerV6`: 553
-- `KitchenTimerV7`: 586
-- `KitchenTimerV8`: 586
-- `KitchenTimerV9`: 635
+- `KitchenTimerV5`: 414
+- `KitchenTimerV6`: 414
+- `KitchenTimerV7`: 414
+- `KitchenTimerV8`: 513
+- `KitchenTimerV9`: 513
 - `KitchenTimerV10`: 513
 
 ## Parameterized specifications
