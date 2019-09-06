@@ -1,4 +1,4 @@
-aag 25 8 1 6 16
+aag 10 8 1 6 1
 2
 4
 6
@@ -7,29 +7,14 @@ aag 25 8 1 6 16
 12
 14
 16
-18 51
+18 21
 18
 19
 0
 19
-18
+1
 0
-20 8 6
-22 9 7
-24 23 11
-26 22 10
-28 27 25
-30 15 13
-32 31 16
-34 30 17
-36 14 12
-38 4 3
-40 38 19
-42 37 21
-44 42 40
-46 35 33
-48 46 44
-50 48 29
+20 19 4
 i0 u0selected0f1dtoggle0selected1b
 i1 u0selected0selected
 i2 u0second2counter0f1dincrement0second2counter1b

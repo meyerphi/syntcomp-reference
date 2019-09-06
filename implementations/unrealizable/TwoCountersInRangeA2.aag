@@ -1,4 +1,4 @@
-aag 37 8 2 11 27
+aag 9 8 1 11 0
 2
 4
 6
@@ -7,46 +7,18 @@ aag 37 8 2 11 27
 12
 14
 16
-18 71
-20 74
+18 17
+1
+19
+1
+1
+1
+1
 0
+1
+1
+1
 0
-22
-0
-0
-27
-21
-22
-22
-0
-0
-22 21 19
-24 20 18
-26 25 23
-28 9 7
-30 28 10
-32 15 13
-34 5 3
-36 4 2
-38 37 35
-40 32 16
-42 40 38
-44 42 18
-46 14 12
-48 33 17
-50 48 47
-52 38 27
-54 52 50
-56 55 45
-58 57 30
-60 42 21
-62 8 6
-64 29 11
-66 64 63
-68 66 60
-70 69 59
-72 60 30
-74 73 69
 i0 u0selected0f1dtoggle0selected1b
 i1 u0selected0selected
 i2 u0second2counter0f1dincrement0second2counter1b
@@ -55,14 +27,14 @@ i4 u0second2counter0second2counter
 i5 u0first2counter0f1dincrement0first2counter1b
 i6 u0first2counter0f1ddecrement0first2counter1b
 i7 u0first2counter0first2counter
-o0 p0p0second0selected
-o1 p0p0in2range0f1dincrement0second2counter1b
-o2 p0p0in2range0f1dincrement0first2counter1b
-o3 p0p0in2range0f1ddecrement0second2counter1b
+o0 p0p0first0selected
+o1 p0p0in2range0first2counter
+o2 p0p0in2range0second2counter
+o3 p0p0button2pressed0switch
 o4 p0p0in2range0f1ddecrement0first2counter1b
-o5 p0p0in2range0second2counter
-o6 p0p0in2range0first2counter
-o7 p0p0first0selected
-o8 p0p0button2pressed0up
-o9 p0p0button2pressed0switch
-o10 p0p0button2pressed0down
+o5 p0p0in2range0f1dincrement0first2counter1b
+o6 p0p0second0selected
+o7 p0p0in2range0f1ddecrement0second2counter1b
+o8 p0p0in2range0f1dincrement0second2counter1b
+o9 p0p0button2pressed0down
+o10 p0p0button2pressed0up

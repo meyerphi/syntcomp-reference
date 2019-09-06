@@ -1,4 +1,4 @@
-aag 14 11 1 8 2
+aag 11 11 0 8 0
 2
 4
 6
@@ -10,17 +10,14 @@ aag 14 11 1 8 2
 18
 20
 22
-24 0
-26
-25
+11
+1
 0
 0
-28
-28
+10
+10
 0
-26
-26 25 11
-28 25 10
+11
 i0 p0p0second0selected
 i1 p0p0in2range0f1dincrement0second2counter1b
 i2 p0p0in2range0f1dincrement0first2counter1b

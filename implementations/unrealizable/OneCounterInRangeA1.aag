@@ -1,16 +1,13 @@
-aag 7 3 1 5 3
+aag 4 3 1 5 0
 2
 4
 6
-8 15
-9
+8 7
+1
 0
 9
-9
+1
 0
-10 5 3
-12 9 6
-14 12 10
 i0 u0counter0f1dinc0counter1b
 i1 u0counter0f1ddec0counter1b
 i2 u0counter0counter

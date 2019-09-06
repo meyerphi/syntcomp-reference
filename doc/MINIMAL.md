@@ -19,7 +19,7 @@ possibly be improved. Here is a list based on a threshold of size 120:
 - `genbuf4`: 9817
 - `generalized_buffer_3`: 5903
 - `generalized_buffer_4`: 13321
-- `generalized_buffer_unreal1_2_2`: 194
+- `generalized_buffer_unreal1_2_2`: 136
 - `generalized_buffer_unreal2_2`: 248
 - `KitchenTimerV5`: 456
 - `KitchenTimerV6`: 553
@@ -27,9 +27,6 @@ possibly be improved. Here is a list based on a threshold of size 120:
 - `KitchenTimerV8`: 586
 - `KitchenTimerV9`: 635
 - `KitchenTimerV10`: 513
-- `OneCounterGuiA6`: 150
-- `OneCounterGuiA7`: 138
-- `OneCounterGuiA8`: 142
 
 ## Parameterized specifications
 
