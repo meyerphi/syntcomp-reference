@@ -407,7 +407,7 @@ full_arbiter_unreal1_3_4,unrealizable,3,3,0,0,0,SUCCESS,.18
 full_arbiter_unreal1_3_5,unrealizable,3,3,0,0,0,SUCCESS,.20
 full_arbiter_unreal1_3_6,unrealizable,3,3,0,0,0,SUCCESS,.24
 full_arbiter_unreal1_3_8,unrealizable,3,3,0,0,0,SUCCESS,.48
-genbuf6,unrealizable,8,8,2,1,3,SUCCESS,.41
+genbuf6,unrealizable,8,8,1,1,2,SUCCESS,.42
 generalized_buffer_unreal1_2_2,unrealizable,4,4,2,1,3,SUCCESS,.36
 generalized_buffer_unreal2_2,unrealizable,4,4,2,1,3,SUCCESS,.40
 lilydemo01,unrealizable,3,1,0,0,0,SUCCESS,.08
