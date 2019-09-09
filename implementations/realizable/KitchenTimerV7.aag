@@ -429,12 +429,6 @@ i0 p0p0eq0time0f1dzero1b
 i1 p0b0btn2start2stop
 i2 p0b0btn2sec
 i3 p0b0btn2min
-l0 l0
-l1 l1
-l2 l2
-l3 l3
-l4 l4
-l5 l5
 o0 u0time0f1dcountup0time0dt1b
 o1 u0time0f1dcountdown0time0dt1b
 o2 u0time0f1dinc2seconds0time1b
@@ -443,7 +437,3 @@ o4 u0time0f1dzero1b
 o5 u0time0time
 o6 u0dsp0f1ddisplay0time1b
 o7 u0dsp0dsp
-c
-/tmp/KitchenTimerV7
-This file was written by ABC on Fri Sep  6 16:32:53 2019
-For information about AIGER format, refer to http://fmv.jku.at/aiger
