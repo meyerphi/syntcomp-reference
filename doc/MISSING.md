@@ -1,12 +1,3 @@
-# Missing reference implementations
-
-For the following specifications, there is yet no reference implemenation:
-
-- `genbuf5`
-- `genbuf6`
-- `generalized_buffer_5`
-- `generalized_buffer_6`
-
 # Unverified implementations
 
 For the following reference implementations, the model checker reaches the
@@ -22,15 +13,17 @@ timeout of one hour when verifying the implementation:
 - `full_arbiter_enc_8`
 - `full_arbiter_enc_10`
 - `full_arbiter_enc_12`
-- `genbuf3`
 - `genbuf4`
-- `generalized_buffer_3`
+- `genbuf5`
 - `generalized_buffer_4`
+- `generalized_buffer_5`
+- `generalized_buffer_6`
 - `ltl2dba_C2_12`
 - `ltl2dba_Q_12`
 - `narylatch_12`
 
 Of these, `detector_12`, `ltl2dba_C2_12`, `ltl2dba_Q12` and `narylatch_12` can
 be verified using the tool `iimc`, which is however known to be unsound in
-general. In the future, the tool `nuXmv` should be replaced with a model
-checker that is sound and can hopefully verify all implementation.
+general. `ltl2dba_Q_12` can be verified within 3 hours with `nuXmv`.
+In the future, the tool `nuXmv` should be replaced with a model
+checker that is sound and can hopefully verify all implementations.

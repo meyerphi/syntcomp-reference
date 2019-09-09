@@ -1,0 +1,36 @@
+aag 11 8 2 8 1
+2
+4
+6
+8
+10
+12
+14
+16
+18 19
+20 4
+18
+22
+0
+0
+0
+0
+0
+0
+22 21 18
+i0 b2s_ack0
+i1 b2s_ack1
+i2 b2r_req0
+i3 b2r_req1
+i4 b2r_req2
+i5 b2r_req3
+i6 b2r_req4
+i7 b2r_req5
+o0 s2b_req0
+o1 s2b_req1
+o2 r2b_ack0
+o3 r2b_ack1
+o4 r2b_ack2
+o5 r2b_ack3
+o6 r2b_ack4
+o7 r2b_ack5

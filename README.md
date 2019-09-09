@@ -58,3 +58,8 @@ typo and used `n=3` in its parameter specification, making it equivalent to
 `simple_arbiter_3.tlsf`. This is fixed in this selection of benchmarks, where
 we use `n=2`. However this needs to be taken into account when comparing the
 reference implementation to previous implementations from SYNTCOMP.
+
+The specification `genbuf6.tlsf` has a typo in line 40, missing a `G` in the
+second part of the assumption for `[spec_unit s2b_1]`, which makes the
+specification unrealizable. This typo was left as it is, however now
+the specification is different from `generalized_buffer_6.tlsf`.

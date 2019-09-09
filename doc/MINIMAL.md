@@ -15,12 +15,6 @@ possibly be improved. Here is a list based on a threshold of size 120:
 
 - `amba_case_study_2`: 1230
 - `amba_case_study_3`: 12569
-- `genbuf3`: 2728
-- `genbuf4`: 9817
-- `generalized_buffer_3`: 5903
-- `generalized_buffer_4`: 13321
-- `generalized_buffer_unreal1_2_2`: 136
-- `generalized_buffer_unreal2_2`: 248
 - `KitchenTimerV5`: 414
 - `KitchenTimerV6`: 414
 - `KitchenTimerV7`: 414
@@ -54,6 +48,7 @@ Specification | Latches | And gates
 `detector_`*n* | *n* | *3n*
 `full_arbiter_`*n* | *2n* | *3n*
 `full_arbiter_enc_`*n* | *2n+2* | *7n+O(log2(n)+log2(n+1))*
+`generalized_buffer_`*n* | *2n+3* | *4n+2*
 `load_balancer_`*n* | *2n-1* | *5n-5*
 `ltl2dba_alpha_`*n* (linear) | *n+1* | *n+2*
 `ltl2dba_alpha_`*n* (binary) | *O(log2(n+1))* | *O(log2(n+1))*
@@ -75,4 +70,3 @@ The following specifications are parameterized, but don't have a general
 implementation yet:
 
 - `amba_case_study_`*n*
-- `generalized_buffer_`*n*
