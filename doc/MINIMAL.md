@@ -13,8 +13,6 @@ verification of all smaller implementations.
 Some specifications only have a large implementation so far that can quite
 possibly be improved. Here is a list based on a threshold of size 120:
 
-- `amba_case_study_2`: 1230
-- `amba_case_study_3`: 12569
 - `KitchenTimerV5`: 414
 - `KitchenTimerV6`: 414
 - `KitchenTimerV7`: 414
@@ -38,6 +36,7 @@ to the basis 2, rounded up.
 
 Specification | Latches | And gates
 --- | ---: | ---:
+`amba_case_study_`*n* | *3n+9* | *17n+24*
 `amba_decomposed_arbiter_`*n* | *n+1* | *6n+6*
 `amba_decomposed_encode_`*n* | *log2(n)* | *n+3log2(n)*
 `amba_decomposed_lock_`*n* | *2* | *2n+2*
@@ -65,8 +64,3 @@ Specification | Latches | And gates
 `shift_`*n* | *0* | *0*
 `simple_arbiter_`*n* | *n* | *0*
 `simple_arbiter_enc_`*n* | *n+1* | *2n+O(log2(n))*
-
-The following specifications are parameterized, but don't have a general
-implementation yet:
-
-- `amba_case_study_`*n*
