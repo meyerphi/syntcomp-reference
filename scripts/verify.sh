@@ -81,7 +81,7 @@ else
     combine_aiger_options=""
     rewrite_rule='/^/n'
 fi
-syfco -f smv -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2smv -a $SMV_FILE >$MONITOR_FILE 2>/dev/null
+syfco -f smv -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2smv -a >$MONITOR_FILE 2>/dev/null
 
 # combine monitor with implementation
 combine-aiger $combine_aiger_options $MONITOR_FILE $IMPLEMENTATION >$COMBINED_FILE
