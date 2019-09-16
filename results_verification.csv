@@ -455,10 +455,10 @@ OneCounterGuiA1,unrealizable,9,9,2,0,2,SUCCESS,.12
 OneCounterGuiA2,unrealizable,9,9,2,0,2,SUCCESS,.13
 OneCounterGuiA3,unrealizable,9,9,2,0,2,SUCCESS,.14
 OneCounterGuiA4,unrealizable,9,9,2,0,2,SUCCESS,.14
-OneCounterGuiA5,unrealizable,9,9,4,4,8,SUCCESS,.23
-OneCounterGuiA6,unrealizable,9,9,4,4,8,SUCCESS,.25
-OneCounterGuiA7,unrealizable,9,9,4,4,8,SUCCESS,.24
-OneCounterGuiA8,unrealizable,9,9,4,4,8,SUCCESS,.27
+OneCounterGuiA5,unrealizable,9,9,3,1,4,SUCCESS,.24
+OneCounterGuiA6,unrealizable,9,9,3,1,4,SUCCESS,.24
+OneCounterGuiA7,unrealizable,9,9,3,1,4,SUCCESS,.24
+OneCounterGuiA8,unrealizable,9,9,3,1,4,SUCCESS,.28
 OneCounterGui,unrealizable,9,9,1,0,1,SUCCESS,.10
 OneCounterInRangeA0,unrealizable,5,3,1,0,1,SUCCESS,.07
 OneCounterInRangeA1,unrealizable,5,3,1,0,1,SUCCESS,.08
