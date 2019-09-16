@@ -8,19 +8,19 @@ aag 13 9 3 9 1
 14
 16
 18
-20 14
-22 4
-24 22
+20 4
+22 26
+24 14
 0
 1
 0
 0
 1
+21
 23
-27
 0
-20
-26 24 22
+24
+26 20 4
 i0 u0counter0f1dinc0counter1b
 i1 u0counter0f1ddec0counter1b
 i2 u0counter0counter
