@@ -1,4 +1,4 @@
-aag 21 9 2 9 10
+aag 17 9 4 9 4
 2
 4
 6
@@ -8,27 +8,23 @@ aag 21 9 2 9 10
 14
 16
 18
-20 36
-22 42
-21
-1
-1
-1
-1
-25
+20 1
+22 35
+24 5
+26 29
+0
 1
 0
-28
-24 22 20
-26 23 21
-28 27 25
-30 18 16
-32 31 20
-34 33 15
-36 35 4
-38 33 4
-40 15 5
-42 41 39
+0
+1
+29
+31
+0
+32
+28 25 20
+30 28 27
+32 23 20
+34 23 17
 i0 u0counter0f1dinc0counter1b
 i1 u0counter0f1ddec0counter1b
 i2 u0counter0counter
@@ -38,12 +34,12 @@ i5 u0button2up0button2up
 i6 u0button2down0f1denable1b
 i7 u0button2down0f1ddisable1b
 i8 u0button2down0button2down
-o0 p0p0in2range0f1ddec0counter1b
-o1 p0p0in2range0f1ddec0f1ddec0counter1b1b
-o2 p0p0in2range0f1dinc0f1ddec0counter1b1b
-o3 p0p0in2range0f1dinc0counter1b
-o4 p0p0in2range0f1dinc0f1dinc0counter1b1b
-o5 p0p0in2range0counter
-o6 p0p0in2range0f1ddec0f1dinc0counter1b1b
+o0 p0p0in2range0f1dinc0f1dinc0counter1b1b
+o1 p0p0in2range0f1dinc0f1ddec0counter1b1b
+o2 p0p0in2range0f1dinc0counter1b
+o3 p0p0in2range0f1ddec0f1dinc0counter1b1b
+o4 p0p0in2range0f1ddec0f1ddec0counter1b1b
+o5 p0p0in2range0f1ddec0counter1b
+o6 p0p0in2range0counter
 o7 p0p0button2pressed0up
 o8 p0p0button2pressed0down
