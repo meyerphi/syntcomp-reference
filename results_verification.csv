@@ -297,7 +297,8 @@ OneCounterInRangeA3,realizable,5,3,0,4,4,SUCCESS,.09
 OneCounter,realizable,9,9,0,10,10,SUCCESS,.15
 prioritized_arbiter_10,realizable,11,11,11,30,41,SUCCESS,7.89
 prioritized_arbiter_12,realizable,13,13,13,36,49,SUCCESS,8.47
-prioritized_arbiter_2,realizable,2,2,1,0,1,SUCCESS,.11
+prioritized_arbiter_1,realizable,2,2,1,0,1,SUCCESS,.09
+prioritized_arbiter_2,realizable,3,3,2,4,6,SUCCESS,.11
 prioritized_arbiter_3,realizable,4,4,4,9,13,SUCCESS,.19
 prioritized_arbiter_4,realizable,5,5,5,12,17,SUCCESS,.37
 prioritized_arbiter_5,realizable,6,6,6,15,21,SUCCESS,.60

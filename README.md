@@ -59,6 +59,10 @@ typo and used `n=3` in its parameter specification, making it equivalent to
 we use `n=2`. However this needs to be taken into account when comparing the
 reference implementation to previous implementations from SYNTCOMP.
 
+The specification `prioritized_arbiter_2.tlsf` in previous SYNTCOMP iterations
+used `n=1` instead of `n=2`. Here, we used `n=2` in accordance to the other
+instances and added a specification `prioritized_arbiter_1.tlsf` with `n=1`.
+
 The specification `genbuf6.tlsf` has a typo in line 40, missing a `G` in the
 second part of the assumption for `[spec_unit s2b_1]`, which makes the
 specification unrealizable. This typo was left as it is, however now

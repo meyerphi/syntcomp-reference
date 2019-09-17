@@ -7,7 +7,7 @@ INFO {
 
 GLOBAL {
   PARAMETERS {
-    n = 2;
+    n = 1;
   }
 
   DEFINITIONS {
@@ -75,3 +75,7 @@ MAIN {
   }
   
 }
+//#!SYNTCOMP
+//STATUS : realizable
+//REF_SIZE : 0
+//#.
