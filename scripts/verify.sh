@@ -106,7 +106,7 @@ if [ $result -eq 0 ]; then
     if grep -q 'specification .* is true' $RESULT_FILE; then
         echo "SUCCESS"
         clean_exit 0
-    elif grep -q "specification.*is false" $RESULT_FILE; then
+    elif grep -q "specification .* is false" $RESULT_FILE; then
         echo "FAILURE"
         clean_exit 2
     else
