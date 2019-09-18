@@ -153,6 +153,7 @@ load_balancer_7,realizable,8,7,13,30,43,SUCCESS,1.06
 load_balancer_8,realizable,9,8,15,35,50,SUCCESS,1.57
 load_balancer_10,realizable,11,10,19,45,64,SUCCESS,9.65
 load_balancer_12,realizable,13,12,23,55,78,SUCCESS,19.47
+load_balancer_unreal2_2,realizable,3,2,1,1,2,SUCCESS,.17
 loadcomp2,realizable,3,2,0,3,3,SUCCESS,.12
 loadcomp3,realizable,4,3,1,8,9,SUCCESS,.18
 loadcomp4,realizable,5,4,3,23,26,SUCCESS,.39
@@ -432,6 +433,9 @@ load_balancer_unreal1_4_3,unrealizable,5,4,0,0,0,SUCCESS,.18
 load_balancer_unreal1_4_4,unrealizable,5,4,0,0,0,SUCCESS,.21
 load_balancer_unreal1_4_5,unrealizable,5,4,0,0,0,SUCCESS,.26
 load_balancer_unreal1_4_6,unrealizable,5,4,0,0,0,SUCCESS,.30
+load_balancer_unreal2_3,unrealizable,4,3,0,0,0,SUCCESS,.16
+load_balancer_unreal2_4,unrealizable,5,4,0,0,0,SUCCESS,.19
+load_balancer_unreal2_5,unrealizable,6,5,0,0,0,SUCCESS,.23
 ltl2dba27,unrealizable,1,1,1,0,1,SUCCESS,.09
 ltl2dba_R_2,unrealizable,2,1,1,0,1,SUCCESS,.12
 ltl2dba_R_3,unrealizable,3,1,1,0,1,SUCCESS,.14

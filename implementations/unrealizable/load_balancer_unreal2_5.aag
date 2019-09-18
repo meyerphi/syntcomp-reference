@@ -1,0 +1,23 @@
+aag 5 5 0 6 0
+2
+4
+6
+8
+10
+1
+0
+1
+1
+1
+1
+i0 grant_0
+i1 grant_1
+i2 grant_2
+i3 grant_3
+i4 grant_4
+o0 idle
+o1 request_0
+o2 request_1
+o3 request_2
+o4 request_3
+o5 request_4
