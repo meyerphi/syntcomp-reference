@@ -413,6 +413,10 @@ full_arbiter_unreal1_3_6,unrealizable,3,3,0,0,0,SUCCESS,.24
 full_arbiter_unreal1_3_8,unrealizable,3,3,0,0,0,SUCCESS,.48
 full_arbiter_unreal1_3_10,unrealizable,3,3,0,0,0,SUCCESS,.79
 full_arbiter_unreal1_3_12,unrealizable,3,3,0,0,0,SUCCESS,1.50
+full_arbiter_unreal2_2,unrealizable,2,2,0,0,0,SUCCESS,.13
+full_arbiter_unreal2_3,unrealizable,3,3,0,0,0,SUCCESS,.18
+full_arbiter_unreal2_4,unrealizable,4,4,0,0,0,SUCCESS,.21
+full_arbiter_unreal2_5,unrealizable,5,5,0,0,0,SUCCESS,.28
 genbuf6,unrealizable,8,8,1,1,2,SUCCESS,.42
 generalized_buffer_unreal1_2_2,unrealizable,4,4,2,1,3,SUCCESS,.36
 generalized_buffer_unreal2_2,unrealizable,4,4,2,1,3,SUCCESS,.40
