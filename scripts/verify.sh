@@ -75,13 +75,15 @@ fi
 
 # build a monitor for the formula
 if [ "$REALIZABLE" == 'unrealizable' ]; then
-    combine_aiger_options="--moore"
+    syfco_format='smv'
+    combine_aiger_options='--moore'
     rewrite_rule='s/LTLSPEC \(.*\)$/LTLSPEC !(\1)/'
 else
-    combine_aiger_options=""
+    syfco_format='smv-decomp'
+    combine_aiger_options=''
     rewrite_rule='/^/n'
 fi
-syfco -f smv -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2smv -a >$MONITOR_FILE 2>/dev/null
+syfco -f $syfco_format -m fully $SPECIFICATION | sed -e "$rewrite_rule" | smvtoaig -L ltl2smv -a >$MONITOR_FILE 2>/dev/null
 
 # combine monitor with implementation
 combine-aiger $combine_aiger_options $MONITOR_FILE $IMPLEMENTATION >$COMBINED_FILE
@@ -92,26 +94,36 @@ if [ $TIMELIMIT -le 0 ]; then
     clean_exit 0
 fi
 
-# model check solution
-set +e
-echo "read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_klive; quit" | timeout -k 10 $TIMELIMIT nuXmv -int >$RESULT_FILE
-result=$?
-set -e
+# model check each justice constraint of the combined file in parallel
+num_justice=$(head -n 1 $COMBINED_FILE | cut -d' ' -f9);
 
-# alternative (but usually slower and more memory-intensive)
-#echo "read_aiger_model -i ${COMBINED_FILE}; go; check_ltlspec; quit" | nuXmv -int
+if [ $num_justice -le 1 ]; then
+    # sequential check
+    set +e
+    echo "read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_klive; quit" | timeout -k 10 $TIMELIMIT nuXmv -int >$RESULT_FILE 2>&1
+    result=$?
+    set -e
+else
+    # parallel check
+    set +e
+    seq 0 $((num_justice - 1)) | parallel --halt now,fail=1 "echo 'read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_klive -n {}; quit' | timeout -k 10 $TIMELIMIT nuXmv -int" >$RESULT_FILE 2>&1
+    result=$?
+    set -e
+fi
 
 # check result
 if [ $result -eq 0 ]; then
-    if grep -q 'specification .* is true' $RESULT_FILE; then
-        echo "SUCCESS"
-        clean_exit 0
-    elif grep -q "specification .* is false" $RESULT_FILE; then
+    num_true=$(grep -c 'specification .* is true' $RESULT_FILE || true)
+    num_false=$(grep -c 'specification .* is false' $RESULT_FILE || true)
+    if [ $num_false -ge 1 ]; then
         echo "FAILURE"
         clean_exit 2
-    else
+    elif [ $num_true -lt $num_justice ]; then
         echo "ERROR: Unknown model checking result"
         clean_exit 1
+    else
+        echo "SUCCESS"
+        clean_exit 0
     fi
 elif [ $result -eq 124 ] || [ $result -eq 137 ]; then
     echo "TIMEOUT"
