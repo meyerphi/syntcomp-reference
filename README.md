@@ -10,11 +10,12 @@ and additionally a few utility scripts for inspecting them.
 
 ### Dependencies for verification
 
-- [SyfCo](https://github.com/reactive-systems/syfco) for TLSF conversion.
+- [SyfCo](https://github.com/meyerphi/syfco) for TLSF conversion.
 - [combine-aiger](https://github.com/meyerphi/combine-aiger) for combining specification and implementation.
 - [NuSMV](http://nusmv.fbk.eu/index.html) with `ltl2smv` binary.
 - [nuXmv](https://es-static.fbk.eu/tools/nuxmv/index.php) model checker.
 - [AIGER tools](http://fmv.jku.at/aiger/) with `aigtoaig` and `smvtoaig` binary.
+- [GNU Parallel](https://www.gnu.org/software/parallel/)
 
 ### Running the verification process
 
