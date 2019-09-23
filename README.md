@@ -15,7 +15,7 @@ and additionally a few utility scripts for inspecting them.
 - [NuSMV](http://nusmv.fbk.eu/index.html) with `ltl2smv` binary.
 - [nuXmv](https://es-static.fbk.eu/tools/nuxmv/index.php) model checker.
 - [AIGER tools](http://fmv.jku.at/aiger/) with `aigtoaig` and `smvtoaig` binary.
-- [GNU Parallel](https://www.gnu.org/software/parallel/)
+- [GNU Parallel](https://www.gnu.org/software/parallel/).
 
 ### Running the verification process
 
@@ -29,6 +29,8 @@ The results will be output into the file `results.csv`.
 The results of a run on a machine equipped with an Intel Core i7-4810MQ CPU
 and 16 GB of memory and with a time limit of three hours are given in
 [`results_verification.csv`](results_verification.csv)
+The results of an older run with a monolithic composition are given in
+[`results_verification_monolithic.csv`](results_verification_monolithic.csv)
 
 To simply collect all combined files for model checking with a different tool,
 one can call the script with time limit 0:
@@ -37,22 +39,21 @@ one can call the script with time limit 0:
 ```
 The combined files will then be output into the folder `combined`.
 
+### Verification results
+
+Currently, almost all implementations can be verified within the time limit.
+The few that cannot be verified directly using the default method can be
+verified using alternative means, for this see the
+[list of unverified implementations](doc/UNVERIFIED.md).
+
 ## Adding new reference implementations
 
 New reference implementations that improve upon the existing ones are always
-welcome. First, several specifications do not yet have any verified reference
-implementation, for that see the
-[list of missing implementations](doc/MISSING.md).
-Further, some implementations are not yet
-minimal or it is unknown whether their size is minimal, for further info
-see the [notes on minimal sizes](doc/MINIMAL.md).
+welcome. Further, some implementations are not yet minimal or it is unknown
+whether their size is minimal, for more info see the
+[notes on minimal sizes](doc/MINIMAL.md).
 
-Finally, some verifications are already very small, but cannot be verified
-within a reasonable amount of time. Here, either a more efficient model checker
-or more work on how to help the model checker to verify the implementation is
-needed.
-
-## Remarks
+## Remarks on specifications
 
 The specification `simple_arbiter_2.tlsf` in previous SYNTCOMP iterations had a
 typo and used `n=3` in its parameter specification, making it equivalent to
