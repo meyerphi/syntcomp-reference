@@ -52,10 +52,15 @@ Specification | Latches | And gates
 `ltl2dba_alpha_`*n* (linear) | *n+1* | *n+2*
 `ltl2dba_alpha_`*n* (binary) | *O(log2(n+1))* | *O(log2(n+1))*
 `ltl2dba_beta_`*n* | *2n* | *4n-1*
-`ltl2dba_E_`*n* | *n* | *2n-1*
+`ltl2dba_C1_`*n* | *0* | *n-1*
 `ltl2dba_C2_`*n* | *n* | *3n*
+`ltl2dba_E_`*n* | *n* | *2n-1*
+`ltl2dba_psi_`*n* | *1* | *0*
 `ltl2dba_Q_`*n* | *2n-1* | *4n-3*
+`ltl2dba_R_`*n* | *1* | *0*
+`ltl2dba_S_`*n* | *n* | *2n-1*
 `ltl2dba_U1_`*n* | *n* | *3n-2*
+`ltl2dba_U2_`*n* | *n* | *2n-1*
 `nary_latch_`*n* | *n* | *3n*
 `mux_`*n* | *0* | *0*
 `prioritized_arbiter_`*n* | *n+1* | *3n*
