@@ -100,13 +100,13 @@ num_justice=$(head -n 1 $COMBINED_FILE | cut -d' ' -f9);
 if [ $num_justice -le 1 ]; then
     # sequential check
     set +e
-    echo "read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_klive; quit" | timeout -k 10 $TIMELIMIT nuXmv -int >$RESULT_FILE 2>&1
+    echo "read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_ic3; quit" | timeout -k 10 $TIMELIMIT nuXmv -int >$RESULT_FILE 2>&1
     result=$?
     set -e
 else
     # parallel check
     set +e
-    seq 0 $((num_justice - 1)) | parallel --halt now,fail=1 "echo 'read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_klive -n {}; quit' | timeout -k 10 $TIMELIMIT nuXmv -int" >$RESULT_FILE 2>&1
+    seq 0 $((num_justice - 1)) | parallel --halt now,fail=1 "echo 'read_aiger_model -i ${COMBINED_FILE}; encode_variables; build_boolean_model; check_ltlspec_ic3 -n {}; quit' | timeout -k 10 $TIMELIMIT nuXmv -int" >$RESULT_FILE 2>&1
     result=$?
     set -e
 fi
