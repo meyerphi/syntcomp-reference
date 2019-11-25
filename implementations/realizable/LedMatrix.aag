@@ -97,10 +97,6 @@ aag 68 3 4 27 61
 i0 p0p0eq0coordx0f1ddec0f1dsizex1b1b
 i1 p0p0on0write
 i2 p0p0eqz0waitcounter
-l0 n33
-l1 n36
-l2 n39
-l3 n42
 o0 u0waitcounter0f1dinc0waitcounter1b
 o1 u0waitcounter0waitcounter
 o2 u0ramwrite0f1dwriteram0writecolor0xcoordinate0ycoordinate1b
@@ -128,7 +124,3 @@ o23 u0color0color
 o24 u0buffer2pin0f1dlow1b
 o25 u0buffer2pin0f1dhigh1b
 o26 u0buffer2pin0buffer2pin
-c
-/tmp/LedMatrix
-This file was written by ABC on Mon Nov 25 15:43:27 2019
-For information about AIGER format, refer to http://fmv.jku.at/aiger

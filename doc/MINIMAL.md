@@ -16,9 +16,9 @@ possibly be improved. Here is a list based on a threshold of size 120:
 - `KitchenTimerV5`: 412
 - `KitchenTimerV6`: 412
 - `KitchenTimerV7`: 412
-- `KitchenTimerV8`: 509
-- `KitchenTimerV9`: 509
-- `KitchenTimerV10`: 509
+- `KitchenTimerV8`: 466
+- `KitchenTimerV9`: 466
+- `KitchenTimerV10`: 466
 
 ## Parameterized specifications
 
