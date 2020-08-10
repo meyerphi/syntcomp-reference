@@ -73,7 +73,7 @@ the specification is different from `generalized_buffer_6.tlsf`.
 ## Implementation sources
 
 Some implementations were obtained by past participants in the
-[SYNTCOMP competition](http://www.syntcomp.org/), among them Strix, ltlsynt, BoSy, Bowser and Party.
+[SYNTCOMP competition](http://www.syntcomp.org/), among them Strix, ltlsynt, BoSy, BoWSer, Party and Acacia.
 The AIGER files were taken from the
 [EDACC instance](https://syntcomp.react.uni-saarland.de/) for 2016-2018 and the
 [StarExec folder](https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=329383) for 2019-2020.
