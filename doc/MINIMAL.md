@@ -13,12 +13,12 @@ verification of all smaller implementations.
 Some specifications only have a large implementation so far that can quite
 possibly be improved. Here is a list based on a threshold of size 120:
 
-- `KitchenTimerV5`: 412
-- `KitchenTimerV6`: 412
-- `KitchenTimerV7`: 412
-- `KitchenTimerV8`: 466
-- `KitchenTimerV9`: 466
-- `KitchenTimerV10`: 466
+- `KitchenTimerV5`: 387
+- `KitchenTimerV6`: 387
+- `KitchenTimerV7`: 387
+- `KitchenTimerV8`: 423
+- `KitchenTimerV9`: 423
+- `KitchenTimerV10`: 423
 
 ## Parameterized specifications
 
