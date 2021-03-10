@@ -69,3 +69,17 @@ The specification `genbuf6.tlsf` has a typo in line 40, missing a `G` in the
 second part of the assumption for `[spec_unit s2b_1]`, which makes the
 specification unrealizable. This typo was left as it is, however now
 the specification is different from `generalized_buffer_6.tlsf`.
+
+## Implementation sources
+
+Some implementations were obtained by past participants in the
+[SYNTCOMP competition](http://www.syntcomp.org/), among them Strix, ltlsynt, BoSy, BoWSer, Party and Acacia.
+The AIGER files were taken from the
+[EDACC instance](https://syntcomp.react.uni-saarland.de/) for 2016-2018 and the
+[StarExec folder](https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=329383) for 2019-2020.
+These implementations were also postprocessed by the [minimization](scripts/minimize.sh) and [stripping](scripts/strip.sh)
+scripts of this repository.
+
+Other implementations were written by hand, especially those for parameterized specifications for which also
+an easy to construct parameterized implementation exists, or those for which there is a easy to find smaller
+solution than any one constructed by the tools above.

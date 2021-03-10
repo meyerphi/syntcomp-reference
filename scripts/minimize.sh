@@ -19,8 +19,10 @@ MIN_AIG_FILE=/tmp/$BASE_FILE.min.aig
 OUTPUT=/tmp/$BASE_FILE.min.aag
 
 compress2rs="balance -l; resub -K 6 -l; rewrite -l; resub -K 6 -N 2; refactor -l; resub -K 8 -l; balance -l; resub -K 8 -N 2 -l; rewrite -l; resub -K 10 -l; rewrite -z -l; resub -K 10 -N 2 -l; balance -l; resub -K 12 -l; refactor -z -l; resub -K 12 -N 2 -l; balance -l; rewrite -z -l; balance -l"
-drwsat2="strash; drw; balance -l; drw; drf; ifraig -C 20; drw; balance -l; drw; drf"
-commands="$compress2rs;$drwsat2"
+drwsat2="drw; balance -l; drw; drf; ifraig -C 20; drw; balance -l; drw; drf"
+lutpack="if -K 2; lutpack -S 3 -L 10 -z; strash"
+commands="$lutpack;$compress2rs;$drwsat2"
+
 
 aigtoaig $INPUT $AIG_FILE
 echo -e "read_aiger $AIG_FILE\n$commands\nwrite_aiger -s $MIN_AIG_FILE" | ~/local/abc/abc >/dev/null
